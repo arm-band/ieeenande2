@@ -37,6 +37,13 @@
         }
     }
 }
+p {
+    .fa {
+        &-internet-explorer, &-firefox, &-chrome, &-safari {
+            font-size: 1.5rem;
+        }
+    }
+}
 // ============================================= *
 //                                               *
 // ヘッダ                                         *

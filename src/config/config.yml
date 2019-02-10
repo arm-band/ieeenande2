@@ -7,7 +7,7 @@ commons:
   ogpimage: img/eyecatch.jpg
   twitteraccount: Bredtn_1et
   newsthumbnail: img/thumbnails/
-  ie: '<i class="fab fa-fw fa-internet-explorer" aria-hidden="true"></i>Internet Explorer'
+  ie: <i class="fab fa-fw fa-internet-explorer" aria-hidden="true"></i>Internet Explorer
 param:
   indexcount: 3
   newscount: 6
