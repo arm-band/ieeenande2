@@ -1,19 +1,20 @@
 commons:
-    sitename: "Kiribi Ususama"
-    description: "gulpを使用した小・中規模Webサイト制作用のボイラープレート"
-    year: 2018
-    author: "アルム＝バンド"
-    url: "http://localhost:3000/"
-    ogpimage: "img/eyecatch.jpg"
-    twitteraccount: "Bredtn_1et"
-    newsthumbnail: "img/thumbnails/"
+  sitename: IE Death Knell
+  description: Microsoftから使用を止めるように要請が出された今こそーー今度こそ、完全に息の根を止めるのだ。彼のIEの。
+  year: 2019
+  author: アルム＝バンド
+  url: https://ieeenande.ewigleere.net
+  ogpimage: img/eyecatch.jpg
+  twitteraccount: Bredtn_1et
+  newsthumbnail: img/thumbnails/
+  ie: '<i class="fab fa-fw fa-internet-explorer" aria-hidden="true"></i>Internet Explorer'
 param:
-    indexcount: 3
-    newscount: 6
-    articlesns:
-        twitter: true
-        facebook: true
-        googleplus: false
-        line: true
-        pocket: true
-        feedly: true
+  indexcount: 3
+  newscount: 6
+  articlesns:
+    twitter: true
+    facebook: true
+    googleplus: false
+    line: true
+    pocket: true
+    feedly: true

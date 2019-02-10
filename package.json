@@ -69,7 +69,8 @@
         "ejs": "^2.5.7",
         "http-errors": "^1.6.2",
         "morgan": "^1.9.0",
-        "opener": "^1.5.1"
+        "opener": "^1.5.1",
+        "ie-buster": "^1.1.0"
     },
     "engines": {
         "node": ">= 8.5.0",

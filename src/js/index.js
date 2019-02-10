@@ -1,3 +1,10 @@
+/* IE鎮まり給へ */
+ieBuster({
+    mainText: "ご利用のインターネットブラウザは推奨環境ではありません。Webサイトの動作が保証できませんので、最新の Google Chrome をご利用ください。",
+    linkText: "ダウンロードページへ",
+    linkUrl: "www.google.com/intl/ja_ALL/chrome/"
+})
+
 $(function() {
     //iPhone・iPad背景画像バグ対処
     mobileSafariRequiem();
@@ -9,11 +16,6 @@ $(function() {
 
     //ページ内スクロール
     pageScroll(screlm);
-
-//    $.getJSON(jsonFile, {ts: new Date().getTime()}, function(data) {
-//    }).done(function(data, status, xhr) {
-//    }).fail(function(xhr, status, error) {
-//  });
 });
 
 //mobile Saffari対策

@@ -21,6 +21,22 @@
 .upper {
     min-height: calc(100vh - (1.5rem * 2) - #{$footer-height}); //コンテンツの高さが足りなくてもフッタを最下部に表示するように //1.5rem * 2:my-4で足される上端と下端のマージンの合計
 }
+.fab {
+    &.fa {
+        &-internet-explorer {
+            color: #1db4e7;
+        }
+        &-firefox {
+            color: $bc-firefox;
+        }
+        &-chrome {
+            color: #4B8BF5;
+        }
+        &-safari {
+            color: #086EDA;
+        }
+    }
+}
 // ============================================= *
 //                                               *
 // ヘッダ                                         *
