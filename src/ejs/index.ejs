@@ -18,6 +18,7 @@ const indexCounter = () => {
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+<%- config.commons.madoka %>
 <%- include("partial/_head", { config, parameters, commonVar, metaTitle, metaDescription, metaOgpimage }) %>
 </head>
 <body data-spy="scroll" data-target="#navbarMenu" data-offset="<%= navbarHeight %>" class="<%= id %>" id="<%= id %>">
@@ -30,42 +31,42 @@ const indexCounter = () => {
         <section class="container-fluid my-5 topics">
             <div class="container">
                 <div class="page-header text-center topics_header">
-                    <h2 class="mb-1">「<%- config.commons.ie %>の使用を止めるように」</h2>
+                    <h2 class="mb-1">「<%- config.commons.iel %>の使用を止めるように」</h2>
                 </div>
-            <p class="lead mb-3 text-center"><span class="mr-1">ご存知でしたか？</span>MicrosoftからInternet Explorerの使用を止めるように要    請が出ていたことを</p>
+            <p class="lead mb-3 text-center"><span class="mr-1">ご存知でしたか？</span>Microsoftから<%= config.commons.iet %>の使用を止めるように要請が出ていたことを</p>
                 <div class="topics_contents">
-                <p>2019/2/6にMicrosoftの技術者ブログ上で、<a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/The-perils-of-using-Internet-Explorer-as-your-default-browser/ba-p/331732">「Internet Explorerの使用を止める」ように<strong>企業に対し    て要請</strong>が出され</a>ました。</p>
+                <p>2019/2/6にMicrosoftの技術者ブログ上で、<a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/The-perils-of-using-Internet-Explorer-as-your-default-browser/ba-p/331732">「<%= config.commons.iet %>の使用を止める」ように<strong>企業に対して要請</strong>が出され</a>ました。</p>
                 </div>
             </div>
         </section>
         <section class="container-fluid py-5 aboutIe">
             <div class="container">
                 <div class="page-header text-center aboutIe_header">
-                    <h2 class="mb-1"><%- config.commons.ie %>とは？</h2>
+                    <h2 class="mb-1"><%- config.commons.iel %>とは？</h2>
                 </div>
-                <p class="lead mb-3 text-center">Internet Explorer<span class="mx-1">＝</span>青い「e」のアイコン</p>
+                <p class="lead mb-3 text-center"><%= config.commons.iet %><span class="mx-1">＝</span>青い「e」のアイコン</p>
                 <div class="aboutIe_contents mb-4">
                     <p class="mb-1">まずはちょっと思い出してください。あなたがパソコンで<a href="https://www.yahoo.co.jp">Yahoo!JAPAN</a>を開くとき、どういったアイコンをクリックしますか？</p>
                     <img src="./img/ie_taskbar_icon.jpg" alt="タスクバーのIEのアイコン" class="ml-3">
                     <p>この黄色い輪がついた青い「e」のアイコン(<i class="fab fa-fw fa-internet-explorer" aria-hidden="true"></i>)でしょうか？</p>
-                    <p>まさにそれです。実はこの<i class="fab fa-fw fa-internet-explorer" aria-hidden="true"></i>のアイコンをクリックして起動するソフトウェアが、「Internet Explorer(インターネット・エクスプローラ)」と呼ばれるものなのです。</p>
+                    <p>まさにそれです。実はこの<i class="fab fa-fw fa-internet-explorer" aria-hidden="true"></i>のアイコンをクリックして起動するソフトウェアが、「<%= config.commons.iet %>(インターネット・エクスプローラ)」と呼ばれるものなのです。</p>
                 </div>
                 <div class="page-header text-center ieNotYahoo_header">
-                    <h2 class="mb-1"><%- config.commons.ie %>？Yahoo!JAPANじゃないの？</h2>
+                    <h2 class="mb-1"><%- config.commons.iel %>？Yahoo!JAPANじゃないの？</h2>
                 </div>
-                <p class="lead mb-3 text-center">Internet Explorerは「ソフトウェア」、Yahoo!JAPANは「ホームページ」</p>
+                <p class="lead mb-3 text-center"><%= config.commons.iet %>は「ソフトウェア」、Yahoo!JAPANは「ホームページ」</p>
                 <div class="ieNotYahoo_contents mb-4">
                     <p>はい、意識はしないかもしれませんが、実は別のものなのです。</p>
                     <p>Yahoo!JAPANはインターネットから情報を検索する、というやや特殊な役割を持っていますが、ブログの記事やニュースメディアと同じようにあくまで「ソフトウェアで開くホームページの1つ」です。</p>
                     <p>逆に、こうしたホームページを開くために使うソフトウェアを「<strong>ブラウザ</strong>(「(本や雑誌を)ざっと読む、拾い読みする」という意味)」といいます。</p>
-                    <p>Internet Explorerはブラウザ(ソフトウェア)の一種です。</p>
+                    <p><%= config.commons.iet %>はブラウザ(ソフトウェア)の一種です。</p>
                 </div>
                 <div class="page-header text-center browsers_header">
                     <h2 class="mb-1">ほかにどんなブラウザがあるの？</h2>
                 </div>
                 <p class="lead mb-3 text-center">代表的なブラウザは「Chrome」「Safari」「Firefox」</p>
                 <div class="browsers_contents">
-                    <p>Internet Explorerがブラウザの「一種」ということは、他にもブラウザがあるということになります。</p>
+                    <p><%= config.commons.iet %>がブラウザの「一種」ということは、他にもブラウザがあるということになります。</p>
                     <p>代表的なものとしては、以下のブラウザが挙げられます。</p>
                     <ul class="fa-ul mb-3">
                         <li class="mb-1"><i class="fab fa-li fa-chrome" aria-hidden="true"></i>Google Chrome(グーグル・クローム)</li>
@@ -80,16 +81,16 @@ const indexCounter = () => {
         </section>
         <section class="container my-5 ieDanger">
             <div class="page-header text-center ieDanger_header">
-                <h2 class="mb-1"><%- config.commons.ie %>の危険性</h2>
+                <h2 class="mb-1"><%- config.commons.iel %>の危険性</h2>
             </div>
-            <p class="lead mb-3 text-center">互換性のために残されているに過ぎないInternet Explorer</p>
+            <p class="lead mb-3 text-center">互換性のために残されているに過ぎない<%= config.commons.iet %></p>
             <div class="ieDanger_contents">
-                <p>さて、Internet Explorerの何が問題なのでしょうか？</p>
-                <p><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/The-perils-of-using-Internet-Explorer-as-your-default-browser/ba-p/331732">最初に挙げた記事</a>では、Internet Explorerは「古いWebアプリケーションを動作させる互換性のための解決策」としています。</p>
+                <p>さて、<%= config.commons.iet %>の何が問題なのでしょうか？</p>
+                <p><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/The-perils-of-using-Internet-Explorer-as-your-default-browser/ba-p/331732">最初に挙げた記事</a>では、<%= config.commons.iet %>は「古いWebアプリケーションを動作させる互換性のための解決策」としています。</p>
                 <p>逆に、ホームページを司る技術の最新の規格への対応は遅れがちで、パソコンとスマートフォンの双方に適したホームページデザインを構築する技術も、対応していなかったり、対応していたとしても一部分だけで完全ではなかったりします。</p>
                 <p>日進月歩のIT分野の、特にWebに関する技術は移り変わりが早いです。1年前の技術は古いとも言われるほどあっという間です。</p>
-                <p>その中にあり、先ほどの「パソコンとスマートフォンの双方に適したホームページデザインを構築する技術」は2年前に発表された規格にも関わらず、数あるブラウザの中でInternet Explorerだけが「一部対応」に留まっています。</p>
-                <p>つまり、ホームページがInternet Explorerでも問題なく見られるようにするには、スマートフォンで見るための利便性を犠牲にする必要があるのです。</p>
+                <p>その中にあり、先ほどの「パソコンとスマートフォンの双方に適したホームページデザインを構築する技術」は2年前に発表された規格にも関わらず、数あるブラウザの中で<%= config.commons.iet %>だけが「一部対応」に留まっています。</p>
+                <p>つまり、ホームページが<%= config.commons.iet %>でも問題なく見られるようにするには、スマートフォンで見るための利便性を犠牲にする必要があるのです。</p>
             </div>
         </section>
 <h3>参考</h3>
@@ -104,9 +105,12 @@ const indexCounter = () => {
 <a href="https://googlefonts.github.io/japanese/#roundedmplus1c">Google Fonts + Japanese • Google Fonts + 日本語</a><br>
 <a href="https://twitter.com/Stocker_jp/status/971557334743891968">なつき@Webデザインスクール土曜開催さんのツイート: &quot;&quot;IE対応と言われたら金額倍くらいを提示したい&quot; https://t.co/w9fWn0X3iG&quot;</a><br>
 <a href="https://anond.hatelabo.jp/20180308013517">IE対応と言われたら金額倍くらいを提示したい</a><br>
-<a href="https://japanese.engadget.com/2019/02/08/internet-explorer-ie/">マイクロソフト、企業にInternet Explorerの使用をやめるよう要請。「IEは技術的負債もたらす」 - Engadget 日本版</a><br>
-<a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/The-perils-of-using-Internet-Explorer-as-your-default-browser/ba-p/331732">The perils of using Internet Explorer as your default browser - Microsoft Tech Community - 331732</a><br>
-
+<a href="https://japanese.engadget.com/2019/02/08/internet-explorer-ie/">マイクロソフト、企業に<%= config.commons.iet %>の使用をやめるよう要請。「IEは技術的負債もたらす」 - Engadget 日本版</a><br>
+<a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/The-perils-of-using-Internet-Explorer-as-your-default-browser/ba-p/331732">The perils of using <%= config.commons.iet %> as your default browser - Microsoft Tech Community - 331732</a><br>
+<a href="https://twitter.com/hashtag/IE%E5%AF%BE%E5%BF%9C%E3%81%AF%E7%89%B9%E5%88%A5%E6%96%99%E9%87%91%E5%88%B6%E3%81%AB%E3%81%99%E3%81%B9%E3%81%8D?src=hash">ハッシュタグ #IE対応は特別料金制にすべき</a><br>
+<a href="https://twitter.com/hashtag/IE%E6%92%B2%E6%BB%85?src=hash">ハッシュタグ #IE撲滅</a><br>
+<a href="https://twitter.com/hashtag/IE%E6%92%B2%E6%BB%85%E6%B4%BB%E5%8B%95?src=hash">ハッシュタグ #IE撲滅活動</a><br>
+<a href="https://twitter.com/hashtag/IE%E6%92%B2%E6%BB%85%E5%A7%94%E5%93%A1%E4%BC%9A?src=hash">ハッシュタグ #IE撲滅委員会</a>
         <section class="container my-5 aboutpage fixed_anchor" id="aboutpage">
             <div class="page-header mb-3 text-center features_header">
                 <h2>このサイトについて<small class="ml-3">About</small></h2>

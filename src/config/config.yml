@@ -7,7 +7,14 @@ commons:
   ogpimage: img/eyecatch.jpg
   twitteraccount: Bredtn_1et
   newsthumbnail: img/thumbnails/
-  ie: <i class="fab fa-fw fa-internet-explorer" aria-hidden="true"></i>Internet Explorer
+  iel: <i class="fab fa-fw fa-internet-explorer" aria-hidden="true"></i>Internet Explorer
+  iet: Internet Explorer
+  madoka: "<!-- 「私、全てのIEを、生まれる前に消し去りたい。全ての宇宙、過去と未来の全てのIEを、この手で」\n「その祈りは――そんな祈りが叶うとすれば、それはシステム干渉なんてレベルじゃない！窓そのものに対する反逆だ！君は、本当に神になるつもりかい？」\n「神様でも何でもいい。今日までIEと戦ってきたプログラマを、希望を信じたエンジニアを、私は泣かせたくない。最後まで笑顔でいてほしい。それを邪魔するブラウザなんて、壊してみせる、変えてみせる」\n「これが私の祈り、私の願い。さあ！叶えてよ、マイク〇ソフト！！」 -->"
+  yukari: "<!-- 怠けて奢る古きは易し。鼻につくわ、そのIE独自のオレオレ実装\n\n美しく残酷にこの大地から往ね！ -->"
+  junko: "<!-- 不倶戴天の敵、IEよ。見てるか！？お前が消えるまでEdgeをいたぶり続けよう！ -->"
+  slayer: "<!-- ドーモ。IE＝サン。IEスレイヤーです -->"
+  penthesilea: "<!-- アア……ゥアア……●す、●す……●すッ！！\n『我が瞋恚にて果てよIE(Outrage Engineer)』！！！ -->"
+  salieri: "我は死だ、我は窓に愛されしものを●すのだ！\n『至高の窓よ、我を憐れみたまえ(Windows Santissimo Misericordia di Ingegnere)』"
 param:
   indexcount: 3
   newscount: 6
