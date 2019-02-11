@@ -7,10 +7,11 @@
 // ============================================= */
 $main-color2: darken($main-color, 8%);
 $main-color3: lighten($main-color, 8%);
-$accent-color: adjust-hue($main-color, 150deg);
-$link-color: adjust-hue($main-color, 210deg);
+$accent-color: adjust-hue($main-color, 165deg);
+$link-color: adjust-hue($main-color, 195deg);
 $link-v-color: darken($link-color, 15%);
 $link-ha-color: darken($link-color, 8%);
+$bg-color2: lighten(#FF8E17, 43%);
 
 // ============================================= *
 //                                               *
@@ -30,10 +31,9 @@ a:hover, a:active {
     color: $link-ha-color;
     text-decoration: underline;
 }
-
-//IEでスクロールバーの背後までページが描画されてしまうのを防ぐ
-@-ms-viewport {
-    width: auto;
+@viewport
+{
+    width: device-width;
     initial-scale: 1;
 }
 //Chrome系のリストのpaddding打ち消し

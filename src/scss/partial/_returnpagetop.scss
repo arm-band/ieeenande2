@@ -1,27 +1,31 @@
 @charset "utf-8";
 
-$rpt-size: 44px;
+$rpt-size: 50px;
 
 .returnPageTop {
-    display: none;
     position: fixed;
-    bottom: 4%;
-    right: 6%;
-       z-index: 90;
-       i {
+    right: 0;
+    bottom: 0;
+    @include t();
+    &:not(.active) {
+        right: (-1 * $rpt-size + 4);
+    }
+    &.active {
+        right: 0;
+    }
+    i {
         display: block;
         font-size: $rpt-size / 2;
         width: $rpt-size;
         height: $rpt-size;
         line-height: $rpt-size;
-        background-color: $main-color3;
-        border-radius: $rpt-size / 11;
+        background-color: $main-color2;
         color: $bg-color;
         text-align: center;
         cursor: pointer;
         @include t();
         &:hover, &:active {
-            background-color: $main-color;
+            background-color: lighten($main-color2, 15%);
         }
     }
 }

@@ -32,16 +32,16 @@
 //キービジュアルに見出しを左右上下中央寄せ
 @mixin eyecatchCenter() {
     display: flex;
-    text-align: center;
+    justify-content: center;
     align-items: center;
     .container-fluid {
-        box-sizing: border-box; //IEバグフィックス
-        max-width: 100%; //IEバグフィックス
+        width: auto;
+        margin: 0 auto;
     }
 }
 //キービジュアルの見出しのタイポグラフィ
 @mixin eyecatchTypo($fontSize) {
-    color: $main-color;
+    color: $link-color;
     z-index: 3;
     font: {
         size: $fontSize;

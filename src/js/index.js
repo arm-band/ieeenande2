@@ -1,8 +1,8 @@
 /* IE鎮まり給へ */
 ieBuster({
-    mainText: "ご利用のインターネットブラウザは推奨環境ではありません。Webサイトの動作が保証できませんので、最新の Google Chrome をご利用ください。",
+    mainText: "Internet Explorerではホームページの動作が保証できません。最新の Google Chrome をご利用ください。",
     linkText: "ダウンロードページへ",
-    linkUrl: "www.google.com/intl/ja_ALL/chrome/"
+    linkUrl: "https://www.google.com/chrome/"
 })
 
 $(function() {
@@ -42,13 +42,13 @@ function scrollElm() {
 function pageTop(screlm) {
     var returnPageTop = $(".returnPageTop");
 
-    $(window).on("scroll", function() {
+    $(window).on("scroll", function(){
         //スクロール距離が400pxより大きければページトップへ戻るボタンを表示
         var currentPos = $(this).scrollTop();
         if (currentPos > 400) {
-            returnPageTop.fadeIn();
+            returnPageTop.addClass("active");
         } else {
-            returnPageTop.fadeOut();
+            returnPageTop.removeClass("active");
         }
     });
 

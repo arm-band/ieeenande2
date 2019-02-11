@@ -27,21 +27,27 @@
 //                                                *
 // ============================================= */
 .index .indexmain {
-    .origin {
-        background: {
-            image: url("../img/origin_of_name.jpg");
-            repeat: no-repeat;
-            position: center center;
+    .topics, .aboutIe, .ieDanger {
+        .lead {
+            &:before,&:after {
+                content: "";
+                display: inline-block;
+                height: 1px;
+                width: 3rem;
+                background-color: $color;
+                line-height: 1.1;
+                vertical-align: middle;
+            }
+            &:before {
+                margin-right: 0.4rem;
+            }
+            &:after {
+                margin-left: 0.4rem;
+            }
         }
-        background-size: cover;
-        padding: {
-            left: 0;
-            right: 0;
-        }
-        &_container {
-            background-color: rgba($color, 0.4);
-            color: $bg-color;
-        }
+    }
+    .aboutIe {
+        background-color: $bg-color2;
     }
 }
 body:not(.mobileSafari).index .indexmain .origin {
