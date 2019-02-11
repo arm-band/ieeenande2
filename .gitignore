@@ -14,3 +14,4 @@ package-lock.json
 /dist/js/
 /dist/img/
 /dist/*.xml
+src/img/
