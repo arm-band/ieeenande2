@@ -27,17 +27,43 @@ const indexCounter = () => {
 <%- include("partial/_eyecatch", { headerString, parameters }) %>
     <!-- main -->
     <main class="main <%= id %>main">
-        <section class="container my-5 topics fixed_anchor" id="topics">
+        <section class="container my-5 topics">
             <div class="page-header mb-3 text-center topics_header">
-                <h2>「<i class="fab fa-fw fa-internet-explorer" aria-hidden="true"><span class="sr-only">Internet Explorer</span></i>の使用を止めるように」</h2>
+                <h2>「<%- config.commons.ie %>の使用を止めるように」</h2>
             </div>
-            <p class="lead">ご存知でしたか？Microsoftから<%- config.commons.ie %>の使用を止めるように要請が出ていたことを――</p>
+            <p class="lead mb-2"><span class="mr-1">ご存知でしたか？</span>MicrosoftからInternet Explorerの使用を止めるように要請が出ていたことを――</p>
             <div class="topics_contents">
                 <p>2019/2/6にMicrosoftの技術者ブログ上で、<a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/The-perils-of-using-Internet-Explorer-as-your-default-browser/ba-p/331732">「Internet Explorerの使用を止める」ように<strong>企業に対して要請</strong>が出され</a>ました。</p>
-                <h3 class="mt-2 mb-1"><%- config.commons.ie %>とは？</h3>
-                <p><%- config.commons.ie %>(インターネット エクスプローラ)は、<a href="https://www.yahoo.co.jp">Yahoo!JAPAN</a>やホームページ、インターネットの検索をする際に開くソフトウェアです。</p>
+            </div>
+        </section>
+        <section class="container my-5 topics">
+            <div class="page-header mb-3 text-center topics_header">
+                <h2><%- config.commons.ie %>とは？</h2>
+            </div>
+            <div class="topics_contents mb-4">
+                <p class="mb-2">まずはちょっと思い出してください。あなたがパソコンで<a href="https://www.yahoo.co.jp">Yahoo!JAPAN</a>を開くとき、どういったアイコンをクリックしますか？</p>
+                <img src="./img/ie_taskbar_icon.jpg" alt="タスクバーのIEのアイコン" class="ml-3">
+                <p>この「黄色い輪がついた青いe」のアイコン(<i class="fab fa-fw fa-internet-explorer" aria-hidden="true"></i>)でしょうか？</p>
+                <p>まさにそれです。実はこの<i class="fab fa-fw fa-internet-explorer" aria-hidden="true"></i>のアイコンをクリックして起動するソフトウェアが、「Internet Explorer(インターネット・エクスプローラ)」と呼ばれるものなのです。</p>
+            </div>
+        </section>
+        <section class="container my-5 topics">
+            <div class="page-header mb-3 text-center topics_header">
+                <h2><%- config.commons.ie %>？Yahoo!JAPANじゃないの？</h2>
+            </div>
+            <div class="topics_contents mb-4">
+                <p>はい、意識はしないかもしれませんが、実は別のものなのです。</p>
+                <p>例えば、あなたが図書館で読書するときにどのような行動をしますか？</p>
+                <p class="mb-3">まず図書館に入ります。次に、膨大な蔵書の中から目当ての本を探し出します。見つかったら書架から本を手に取り、最後は椅子に座りって本を読むでしょう。</p>
+                <p>インターネットも同じイメージです。インターネットという巨大な図書館からYahoo!JAPANを使って目当ての記事や動画を探しますが、インターネットは形がありません。「図書館に入る」「本を探す」「書架から手に取る」「椅子に座って本を開く」といった、図書館であなたが取った行動を実行するソフトウェアが必要になります。</p>
+                <p class="mb-3">このソフトウェアを「<strong>ブラウザ</strong>」と言います。Internet Explorerはたくさんあるブラウザの1つです。</p>
+                <p>Yahoo!JAPANは、図書館で言うと司書さんのような存在です。</p>
+            </div>
+        </section>
+<h3 class="mt-2 mb-1"></h3>
+                <p><%- config.commons.ie %>(インターネット エクスプローラ)は、やホームページ、インターネットの検索をする際に開くソフトウェアです。</p>
                 <p>お手元のパソコンで画面の下に出ている「<i class="fab fa-fw fa-internet-explorer" aria-hidden="true"></i>」のアイコン。クリックするとYahoo!JAPANが開くそのアイコンこそが、Internet Explorerなのです。</p>
-                <h3 class="mt-2 mb-1"><i class="fab fa-fw fa-internet-explorer" aria-hidden="true"></i> ≠ Yahoo!JAPAN</h3>
+                <h3 class="mt-2 mb-1"></h3>
                 <p>Yahoo!JAPANは<strong>Internet Explorerというソフトウェアが、起動時に最初に表示するページとして設定されているだけ</strong>で、実は「<i class="fab fa-fw fa-internet-explorer" aria-hidden="true"></i>」というアイコンとの直接の関係はありません。</p>
                 <p>Yahoo!JAPANを開いたり、Youtubeで動画を閲覧したり、何か調べ物で検索を行う際に知らず知らずに利用しているソフトウェア、それがInternet Explorerであり、Yahoo!JAPANなど、表示される「ページ」とは<strong>まったく別の存在(「ソフトウェア」)</strong>なのです。</p>
                 <h3 class="mt-2 mb-1"><%- config.commons.ie %>の仲間</h3>
@@ -46,22 +72,20 @@ const indexCounter = () => {
                 <p>ブラウザはInternet Explorer以外にも多くの種類があり、Googleが開発している「<a href="https://www.google.com/intl/ja_ALL/chrome/"><i class="fab fa-fw fa-chrome" aria-hidden="true"></i>Google Chrome(クローム)</a>」やMozillaの「<a href="https://www.mozilla.org/ja/firefox/new/"><i class="fab fa-fw fa-firefox" aria-hidden="true"></i>Firefox(ファイアフォックス)</a>」が代表的な存在です。</p>
                 <p>もしお持ちのスマートフォンがiPhoneならば、「<i class="fab fa-fw fa-safari" aria-hidden="true"></i>Safari(サファリ)」があるはずです。</p>
                 <p>そう、ブラウザはInternet Explorerだけではないのです。そして、これらのブラウザはみな無料で使用することができます。</p>
-            </div>
-        </section>
 <h3>参考</h3>
-<a href="https://ie-buster.qranoko.jp/">IE Buster - IEの亡霊からWeb制作者を守る「IEバスター」</a>
-<a href="https://caniuse.com/#feat=css-grid">Can I use... Support tables for HTML5, CSS3, etc</a>
-<a href="https://caniuse.com/#feat=flexbox">Can I use... Support tables for HTML5, CSS3, etc</a>
-<a href="https://gk2.jp/2018-statistics-pc-sp-browser-usage-check-share-rate-of-japanese-iphone-users-too/">【2018年の統計】PC・SPのブラウザ利用チェック。日本のiPhoneユーザーのシェア率も！ | 外国人の彼女2.0</a>
-<a href="https://twitter.com/Bredtn_1et/status/1034599994240598016">アルム＝バンド@Lravel+Vue始めましたさんのツイート: &quot;IEのここが凄い！ ・時々固まる ・最新の11でも最新どころか数年前の仕様にすら対応してない ・cssグラデーションなど、独自記法がある ・バージョンごとに互換性がない ・下位互換を使わせたがる ・Windowsに標準で付いてきて使用者が多い ・公式も匙を投げた IEのここがダメ！ ・上記全て、存在自体&quot;</a>
-<a href="https://twitter.com/chisamikan/status/1030578137984200704">千紗みかん⚓️北極星と船霊達さんのツイート: &quot;IEで泣いた事案の一例 https://t.co/pURA8SmyOt&quot;</a>
-<a href="https://twitter.com/chisamikan/status/1030323545174228994">千紗みかん⚓️北極星と船霊達さんのツイート: &quot;GoogleフォントがIE11で正常に表示されなくなった [CSS] on @Qiita https://t.co/E2O4bqZpn0&quot;</a>
-<a href="https://qiita.com/chisamikan/items/c4d37754d175c17fbe41">GoogleフォントがIE11で正常に表示されなくなった - Qiita</a>
-<a href="https://googlefonts.github.io/japanese/#roundedmplus1c">Google Fonts + Japanese • Google Fonts + 日本語</a>
-<a href="https://twitter.com/Stocker_jp/status/971557334743891968">なつき@Webデザインスクール土曜開催さんのツイート: &quot;&quot;IE対応と言われたら金額倍くらいを提示したい&quot; https://t.co/w9fWn0X3iG&quot;</a>
-<a href="https://anond.hatelabo.jp/20180308013517">IE対応と言われたら金額倍くらいを提示したい</a>
-<a href="https://japanese.engadget.com/2019/02/08/internet-explorer-ie/">マイクロソフト、企業にInternet Explorerの使用をやめるよう要請。「IEは技術的負債もたらす」 - Engadget 日本版</a>
-<a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/The-perils-of-using-Internet-Explorer-as-your-default-browser/ba-p/331732">The perils of using Internet Explorer as your default browser - Microsoft Tech Community - 331732</a>
+<a href="https://ie-buster.qranoko.jp/">IE Buster - IEの亡霊からWeb制作者を守る「IEバスター」</a><br>
+<a href="https://caniuse.com/#feat=css-grid">Can I use... Support tables for HTML5, CSS3, etc</a><br>
+<a href="https://caniuse.com/#feat=flexbox">Can I use... Support tables for HTML5, CSS3, etc</a><br>
+<a href="https://gk2.jp/2018-statistics-pc-sp-browser-usage-check-share-rate-of-japanese-iphone-users-too/">【2018年の統計】PC・SPのブラウザ利用チェック。日本のiPhoneユーザーのシェア率も！ | 外国人の彼女2.0</a><br>
+<a href="https://twitter.com/Bredtn_1et/status/1034599994240598016">アルム＝バンド@Lravel+Vue始めましたさんのツイート: &quot;IEのここが凄い！ ・時々固まる ・最新の11でも最新どころか数年前の仕様にすら対応してない ・cssグラデーションなど、独自記法がある ・バージョンごとに互換性がない ・下位互換を使わせたがる ・Windowsに標準で付いてきて使用者が多い ・公式も匙を投げた IEのここがダメ！ ・上記全て、存在自体&quot;</a><br>
+<a href="https://twitter.com/chisamikan/status/1030578137984200704">千紗みかん⚓️北極星と船霊達さんのツイート: &quot;IEで泣いた事案の一例 https://t.co/pURA8SmyOt&quot;</a><br>
+<a href="https://twitter.com/chisamikan/status/1030323545174228994">千紗みかん⚓️北極星と船霊達さんのツイート: &quot;GoogleフォントがIE11で正常に表示されなくなった [CSS] on @Qiita https://t.co/E2O4bqZpn0&quot;</a><br>
+<a href="https://qiita.com/chisamikan/items/c4d37754d175c17fbe41">GoogleフォントがIE11で正常に表示されなくなった - Qiita</a><br>
+<a href="https://googlefonts.github.io/japanese/#roundedmplus1c">Google Fonts + Japanese • Google Fonts + 日本語</a><br>
+<a href="https://twitter.com/Stocker_jp/status/971557334743891968">なつき@Webデザインスクール土曜開催さんのツイート: &quot;&quot;IE対応と言われたら金額倍くらいを提示したい&quot; https://t.co/w9fWn0X3iG&quot;</a><br>
+<a href="https://anond.hatelabo.jp/20180308013517">IE対応と言われたら金額倍くらいを提示したい</a><br>
+<a href="https://japanese.engadget.com/2019/02/08/internet-explorer-ie/">マイクロソフト、企業にInternet Explorerの使用をやめるよう要請。「IEは技術的負債もたらす」 - Engadget 日本版</a><br>
+<a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/The-perils-of-using-Internet-Explorer-as-your-default-browser/ba-p/331732">The perils of using Internet Explorer as your default browser - Microsoft Tech Community - 331732</a><br>
 
         <section class="container my-5 aboutpage fixed_anchor" id="aboutpage">
             <div class="page-header mb-3 text-center features_header">
