@@ -1,10 +1,9 @@
     <section class="container-fluid eyecatch">
         <div class="container">
-            <h1 class="eyecatch_header"><%= headerString %></h1>
 <%
-if(id === "index") {
+if(id !== "index") {
 %>
-            <p class="eyecatch_paragraph"><%= parameters.description %></p>
+            <h1 class="eyecatch_header"><%= headerString %></h1>
 <%
 }
 %>
