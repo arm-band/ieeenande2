@@ -1,5 +1,14 @@
     <section class="eyecatch">
         <div class="container-fluid">
+<% if(id === "index") { %>
+            <h1 class="eyecatch_header">
+                <span class="fa-stack">
+                    <i class="fab fa-fw fa-internet-explorer fa-stack-1x"></i>
+                    <i class="fas fa-fw fa-ban fa-stack-2x"></i>
+                </span>
+            </h1>
+<% } else { %>
             <h1 class="eyecatch_header"><%= headerString %></h1>
+<% } %>
         </div>
     </section>
