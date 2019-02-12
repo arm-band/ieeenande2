@@ -57,6 +57,23 @@
             }
         }
     }
+    .btn {
+        &[aria-expanded="false"] {
+            @include t();
+            border-radius: 0;
+            .fa-plus {
+                @include t();
+            }
+        }
+        &[aria-expanded="true"] {
+            @include t();
+            border-radius: 24px;
+            .fa-plus {
+                @include t();
+                transform: rotate(45deg);
+            }
+        }
+    }
     .grid_container, .grid_container2 {
         display: grid;
     }

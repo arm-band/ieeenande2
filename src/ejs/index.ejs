@@ -70,56 +70,76 @@ const indexCounter = () => {
                 </div>
                 <p class="lead mb-3 text-center"><%= config.commons.iet %><span class="mx-1">＝</span>青い「e」のアイコン</p>
                 <div class="aboutIe_contents mb-4">
-                    <p class="mb-1">まずはちょっと思い出してください。あなたがパソコンで<a href="https://www.yahoo.co.jp">Yahoo!JAPAN</a>を開くとき、どういったアイコンをクリックしますか？</p>
-                    <img src="./img/ie_taskbar_icon.jpg" alt="タスクバーのIEのアイコン" class="ml-3">
-                    <p>この黄色い輪がついた青い「e」のアイコン(<%- config.commons.ielm %>)でしょうか？</p>
-                    <p>まさにそれです。実はこの<%- config.commons.ielm %>のアイコンをクリックして起動するソフトウェアが、「<%= config.commons.iet %>(インターネット・エクスプローラ)」と呼ばれるものなのです。</p>
+                    <div class="aboutIE_button text-center">
+                        <button type="button" class="btn btn-secondary my-2 py-2" data-toggle="collapse" href="#aboutIe_contents" aria-expanded="false" aria-controls="aboutIe_contents"><i class="fas fa-fw fa-plus" aria-hidden="true"></i><span class="sr-only">開く</span></button>
+                    </div>
+                    <div id="aboutIe_contents" class="collapse">
+                        <p class="mb-1">まずはちょっと思い出してください。あなたがパソコンで<a href="https://www.yahoo.co.jp">Yahoo!JAPAN</a>を開くとき、どういったアイコンをクリックしますか？</p>
+                        <img src="./img/ie_taskbar_icon.jpg" alt="タスクバーのIEのアイコン" class="ml-3">
+                        <p>この黄色い輪がついた青い「e」のアイコン(<%- config.commons.ielm %>)でしょうか？</p>
+                        <p>まさにそれです。実はこの<%- config.commons.ielm %>のアイコンをクリックして起動するソフトウェアが、「<%= config.commons.iet %>(インターネット・エクスプローラ)」と呼ばれるものなのです。</p>
+                    </div>
                 </div>
                 <div class="page-header text-center ieNotYahoo_header" id="ieNotYahoo">
                     <h2 class="mb-1"><%- config.commons.iel %><%= config.commons.iet %>？Yahoo!JAPANじゃないの？</h2>
                 </div>
                 <p class="lead mb-3 text-center"><%= config.commons.iet %>は「ソフトウェア」、Yahoo!JAPANは「ホームページ」</p>
                 <div class="ieNotYahoo_contents mb-4">
-                    <p>はい、意識はしないかもしれませんが、実は別のものなのです。</p>
-                    <p>Yahoo!JAPANはインターネットから情報を検索する、というやや特殊な役割を持っていますが、ブログの記事やニュースメディアと同じようにあくまで「ソフトウェアで開くホームページの1つ」です。</p>
-                    <p>逆に、こうしたホームページを開くために使うソフトウェアを「<strong>ブラウザ</strong>」といいます。<small>なお、ブラウザは「(本や雑誌を)ざっと読む、拾い読みする」という意味の英語に由来します。</small></p>
-                    <p><%= config.commons.iet %>はブラウザ(ソフトウェア)の一種です。</p>
+                    <div class="ieNotYahoo_button text-center">
+                        <button type="button" class="btn btn-secondary my-2 py-2" data-toggle="collapse" href="#ieNotYahoo_contents" aria-expanded="false" aria-controls="ieNotYahoo_contents"><i class="fas fa-fw fa-plus" aria-hidden="true"></i><span class="sr-only">開く</span></button>
+                    </div>
+                    <div id="ieNotYahoo_contents" class="collapse">
+                        <p>はい、意識はしないかもしれませんが、実は別のものなのです。</p>
+                        <p>Yahoo!JAPANはインターネットから情報を検索する、というやや特殊な役割を持っていますが、ブログの記事やニュースメディアと同じようにあくまで「ソフトウェアで開くホームページの1つ」です。</p>
+                        <p>逆に、こうしたホームページを開くために使うソフトウェアを「<strong>ブラウザ</strong>」といいます。<small>なお、ブラウザは「(本や雑誌を)ざっと読む、拾い読みする」という意味の英語に由来します。</small></p>
+                        <p><%= config.commons.iet %>はブラウザ(ソフトウェア)の一種です。</p>
+                    </div>
                 </div>
                 <div class="page-header text-center browsers_header" id="browsers">
                     <h2 class="mb-1">ほかにどんなブラウザがあるの？</h2>
                 </div>
                 <p class="lead mb-3 text-center">代表的なブラウザは「Chrome」「Safari」「Firefox」</p>
                 <div class="browsers_contents">
-                    <p><%= config.commons.iet %>がブラウザの「一種」ということは、他にもブラウザがあるということになります。</p>
-                    <p>代表的なものとしては、以下のブラウザが挙げられます。</p>
-                    <ul class="fa-ul mb-3">
-                        <li class="mb-1"><i class="fab fa-li fa-chrome magni1_5" aria-hidden="true"></i>Google Chrome(グーグル・クローム)</li>
-                        <li class="mb-1"><i class="fab fa-li fa-firefox magni1_5" aria-hidden="true"></i>Safari(サファリ)</li>
-                        <li class="mb-1"><i class="fab fa-li fa-safari magni1_5" aria-hidden="true"></i>Firefox(ファイアフォックス)</li>
-                        <li class="mb-1"><i class="fab fa-li fa-edge magni1_5" aria-hidden="true"></i>Edge(エッジ)</li>
-                    </ul>
-                    <p>SafariはiPhoneに標準搭載されているブラウザです。Google ChromeもiPhoneではないスマートフォン(Android(アンドロイド))に標準搭載されています。</p>
-                    <p>そのため、SafariとGoogle Chromeはスマートフォンを使ったことのある方ならおなじみかもしれません。</p>
-                    <p>ちなみに、<a href="https://www.google.com/chrome/">Google Chrome</a>はパソコンにもインストールできます。同じようにパソコンにインストールできるブラウザとして、<a href="https://www.mozilla.org/ja/firefox/new/">Firefox</a>があります。どちらも無料です。</p>
-                    <p>また、お使いのパソコンが新しい(Windows10)場合、<%- config.commons.ielm %><%- config.commons.iet %>とロゴが似ている<i class="fab fa-fw fa-edge magni1_5" aria-hidden="true"></i>Edgeというブラウザが標準搭載されています。</p>
+                    <div class="ieNotYahoo_button text-center">
+                        <button type="button" class="btn btn-secondary my-2 py-2" data-toggle="collapse" href="#browsers_contents" aria-expanded="false" aria-controls="browsers_contents"><i class="fas fa-fw fa-plus" aria-hidden="true"></i><span class="sr-only">開く</span></button>
+                    </div>
+                    <div id="browsers_contents" class="collapse">
+                        <p><%= config.commons.iet %>がブラウザの「一種」ということは、他にもブラウザがあるということになります。</p>
+                        <p>代表的なものとしては、以下のブラウザが挙げられます。</p>
+                        <ul class="fa-ul mb-3">
+                            <li class="mb-1"><i class="fab fa-li fa-chrome magni1_5" aria-hidden="true"></i>Google Chrome(グーグル・クローム)</li>
+                            <li class="mb-1"><i class="fab fa-li fa-firefox magni1_5" aria-hidden="true"></i>Safari(サファリ)</li>
+                            <li class="mb-1"><i class="fab fa-li fa-safari magni1_5" aria-hidden="true"></i>Firefox(ファイアフォックス)</li>
+                            <li class="mb-1"><i class="fab fa-li fa-edge magni1_5" aria-hidden="true"></i>Edge(エッジ)</li>
+                        </ul>
+                        <p>SafariはiPhoneに標準搭載されているブラウザです。Google ChromeもiPhoneではないスマートフォン(Android(アンドロイド))に標準搭載されています。</p>
+                        <p>そのため、SafariとGoogle Chromeはスマートフォンを使ったことのある方ならおなじみかもしれません。</p>
+                        <p>ちなみに、<a href="https://www.google.com/chrome/">Google Chrome</a>はパソコンにもインストールできます。同じようにパソコンにインストールできるブラウザとして、<a href="https://www.mozilla.org/ja/firefox/new/">Firefox</a>があります。どちらも無料です。</p>
+                        <p>また、お使いのパソコンが新しい(Windows10)場合、<%- config.commons.ielm %><%- config.commons.iet %>とロゴが似ている<i class="fab fa-fw fa-edge magni1_5" aria-hidden="true"></i>Edgeというブラウザが標準搭載されています。</p>
+                    </div>
                 </div>
                 <div class="page-header text-center statistics_header" id="statistics">
                     <h2 class="mb-1">世の中の60%以上はGoogle Chrome</h2>
                 </div>
                 <p class="lead mb-3 text-center"><%= config.commons.iet %>はたったの3%！</p>
                 <div class="statistics_contents">
-                    <p>「Google Chrome？Safari？聞いたことないなぁ……」</p>
-                    <p>もしかしたら、そう感じるかもしれません。</p>
-                    <p>しかし、先ほども述べたように、Google ChromeやSafariはスマートフォンに標準搭載されていますので、意識せずともお世話になっている方も多いはずです。</p>
-                    <p class="mb-1">それでは、数字ではどうでしょうか？</p>
-                    <p>統計データを見ると、統計の手法や対象範囲によってバラつきはあるものの、<a href="http://gs.statcounter.com">http://gs.statcounter.com</a>という統計データサイトでは、世界のブラウザの<strong>約61%</strong>がGoogle Chromeとなっています(2019年1月現在)。</p>
-                    <p>一方の<%= config.commons.iet %>は<strong>約3%</strong>となっています。</p>
-                    <div><a href="<%= relPath %>img/statcounter_browser_world.png" data-lightbox><img src="<%= relPath %>img/statcounter_browser_world.png" alt="世界のブラウザシェア率(2018/1～2019/1)。2019/1現在、Google Chromeは約61%、<%= config.commons.iet %>は約9.4%となっています。" class="img-fluid"></a></div>
-                    <p class="mt-2">日本国内で限定するとどうでしょうか？</p>
-                    <p>割合こそ下がるものの、Google Chromeは<strong>約43%</strong>。一方の<%= config.commons.iet %>は<strong>約9%</strong>と<strong>1割を切って</strong>います(2019年1月現在)。日本国内でも、Google Chromeと<%= config.commons.iet %>は実に4倍以上の差があります！</p>
-                    <dvi><a href="<%= relPath %>img/statcounter_browser_japan.png" data-lightbox><img src="<%= relPath %>img/statcounter_browser_japan.png" alt="日本のブラウザシェア率(2018/1～2019/1)。2019/1現在、Google Chromeは約43%、<%= config.commons.iet %>は約9%となっています。" class="img-fluid"></a></dvi>
-                    <p class="mt-2">このように、世の中の大多数の人はGoogle Chromeを使ってホームページを見ているのです。</p>
-                    <p>しかも、来年には<%= config.commons.iet %>のシェア率は<strong>さらに下がる</strong>ことが見込まれています<small>(※Windows7のサポート終了に伴い、<%= config.commons.iet %>を標準とするパソコンが減少するため)</small>。</p>
+                    <div class="statistics_button text-center">
+                        <button type="button" class="btn btn-secondary my-2 py-2" data-toggle="collapse" href="#statistics_contents" aria-expanded="false" aria-controls="statistics_contents"><i class="fas fa-fw fa-plus" aria-hidden="true"></i><span class="sr-only">開く</span></button>
+                    </div>
+                    <div id="statistics_contents" class="collapse">
+                        <p>「Google Chrome？Safari？聞いたことないなぁ……」</p>
+                        <p>もしかしたら、そう感じるかもしれません。</p>
+                        <p>しかし、先ほども述べたように、Google ChromeやSafariはスマートフォンに標準搭載されていますので、意識せずともお世話になっている方も多いはずです。</p>
+                        <p class="mb-1">それでは、数字ではどうでしょうか？</p>
+                        <p>統計データを見ると、統計の手法や対象範囲によってバラつきはあるものの、<a href="http://gs.statcounter.com">http://gs.statcounter.com</a>という統計データサイトでは、世界のブラウザの<strong>約61%</strong>がGoogle Chromeとなっています(2019年1月現在)。</p>
+                        <p>一方の<%= config.commons.iet %>は<strong>約3%</strong>となっています。</p>
+                        <div><a href="<%= relPath %>img/statcounter_browser_world.png" data-lightbox="statistics1"><img src="<%= relPath %>img/statcounter_browser_world.png" alt="世界のブラウザシェア率(2018/1～2019/1)。2019/1現在、Google Chromeは約61%、<%= config.commons.iet %>は約9.4%となっています。" class="img-fluid"></a></div>
+                        <p class="mt-2">日本国内で限定するとどうでしょうか？</p>
+                        <p>割合こそ下がるものの、Google Chromeは<strong>約43%</strong>。一方の<%= config.commons.iet %>は<strong>約9%</strong>と<strong>1割を切って</strong>います(2019年1月現在)。日本国内でも、Google Chromeと<%= config.commons.iet %>は実に4倍以上の差があります！</p>
+                        <div><a href="<%= relPath %>img/statcounter_browser_japan.png" data-lightbox="statistics2"><img src="<%= relPath %>img/statcounter_browser_japan.png" alt="日本のブラウザシェア率(2018/1～2019/1)。2019/1現在、Google Chromeは約43%、<%= config.commons.iet %>は約9%となっています。" class="img-fluid"></a></div>
+                        <p class="mt-2">このように、世の中の大多数の人はGoogle Chromeを使ってホームページを見ているのです。</p>
+                        <p>しかも、来年には<%= config.commons.iet %>のシェア率は<strong>さらに下がる</strong>ことが見込まれています<small>(※Windows7のサポート終了に伴い、<%= config.commons.iet %>を標準とするパソコンが減少するため)</small>。</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -129,12 +149,17 @@ const indexCounter = () => {
             </div>
             <p class="lead mb-3 text-center">互換性のために残されているに過ぎない<%= config.commons.iet %></p>
             <div class="ieProbrem_contents">
-                <p>さて、<%= config.commons.iet %>の何が問題なのでしょうか？</p>
-                <p><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/The-perils-of-using-Internet-Explorer-as-your-default-browser/ba-p/331732">最初に挙げた記事</a>では、<%= config.commons.iet %>は<q>古いWebアプリケーションを動作させる互換性のためのソリューション</q>と述べています。</p>
-                <p>また、<a href="https://blogs.technet.microsoft.com/jpieblog/2018/07/18/internet-explorer-support/">Microsoftは2018年7月に</a>も<q>現在の世の中にあふれるリッチなコンテンツは、すでに <%= config.commons.iet %> ではサポートしていない最新技術を利用して実現</q>と、<%= config.commons.iet %>がモダンな技術に対応できていないことを認めています。</p>
-                <p>さらに過去にさかのぼると、<a href="https://blogs.windows.com/japan/2015/08/24/evaeyeedge/">Micorosftは2015年8月に</a><q>セキュリティ対策などのマイナーアップデートは今後も行われますが、新機能が追加される予定はありません</q>と発表しており、<%= config.commons.iet %>の新しい技術への対応はかなり前から実施しない方針であることを明らかにしていました。</p>
-                <p>その上で<q>Legacy Web から Modern Web への移行を十分に余裕をもった計画で検討を進める必要がある</q>と、モダンな環境に移行するように呼びかけを行っています。</p>
-                <p><%= config.commons.iet %>は、開発元・公式であるMicrosoftからも他への移行を求められているのです。</p>
+                <div class="ieProbrem_button text-center">
+                    <button type="button" class="btn btn-secondary my-2 py-2" data-toggle="collapse" href="#ieProbrem_contents" aria-expanded="false" aria-controls="ieProbrem_contents"><i class="fas fa-fw fa-plus" aria-hidden="true"></i><span class="sr-only">開く</span></button>
+                </div>
+                <div id="ieProbrem_contents" class="collapse">
+                    <p>さて、<%= config.commons.iet %>の何が問題なのでしょうか？</p>
+                    <p><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/The-perils-of-using-Internet-Explorer-as-your-default-browser/ba-p/331732">最初に挙げた記事</a>では、<%= config.commons.iet %>は<q>古いWebアプリケーションを動作させる互換性のためのソリューション</q>と述べています。</p>
+                    <p>また、<a href="https://blogs.technet.microsoft.com/jpieblog/2018/07/18/internet-explorer-support/">Microsoftは2018年7月に</a>も<q>現在の世の中にあふれるリッチなコンテンツは、すでに <%= config.commons.iet %> ではサポートしていない最新技術を利用して実現</q>と、<%= config.commons.iet %>がモダンな技術に対応できていないことを認めています。</p>
+                    <p>さらに過去にさかのぼると、<a href="https://blogs.windows.com/japan/2015/08/24/evaeyeedge/">Micorosftは2015年8月に</a><q>セキュリティ対策などのマイナーアップデートは今後も行われますが、新機能が追加される予定はありません</q>と発表しており、<%= config.commons.iet %>の新しい技術への対応はかなり前から実施しない方針であることを明らかにしていました。</p>
+                    <p>その上で<q>Legacy Web から Modern Web への移行を十分に余裕をもった計画で検討を進める必要がある</q>と、モダンな環境に移行するように呼びかけを行っています。</p>
+                    <p><%= config.commons.iet %>は、開発元・公式であるMicrosoftからも他への移行を求められているのです。</p>
+                </div>
             </div>
         </section>
         <section class="container my-5 legacyOrModern" id="legacyOrModern">
@@ -143,18 +168,23 @@ const indexCounter = () => {
             </div>
             <p class="lead mb-3 text-center"><%= config.commons.iet %>は企業に「技術的負債」を強いる</p>
             <div class="legacyOrModern_contents">
-                <p>今や多くの人が持っているスマートフォン。操作している手元をよく見ると、ほとんどの人は画面を縦向きにして使用していることでしょう。</p>
-                <p>一方、パソコンの画面は横長です。</p>
-                <p>現在のホームページは、パソコンの横長の画面でも、スマートフォンの縦長の画面でも、それぞれの画面に適したデザインで表示するように作られています。</p>
-                <p class="mb-1">ただし、何もせずしてそうなっているわけではなく、世のWebデザイナーやプログラマーが工夫することで、そのようなデザインを提供することが初めて可能となります。</p>
-                <p>スマートフォンが普及し始めた頃は、横長と縦長の両方に適したデザインを提供することは難しい課題でした。</p>
-                <p>スマートフォンが登場して約10年が経過した今、Webの規格は新しく制定され、新しい端末へ適用できるように拡張が続けられました。</p>
-                <p>しかし、Webのこうした新しい規格に完全には対応できていないソフトウェアがあります。</p>
-                <p>――そう、<%= config.commons.iet %>です。</p>
-                <p>新しく、便利で簡単に利用できる技術であればあるほど、<%= config.commons.iet %>は足かせになるのが現状です。</p>
-                <p>極端に言えば、</p>
-                <p class="my-2">「スマートフォンを取るか、<%= config.commons.iet %>を取るか。」</p>
-                <p>それほどまでに、<%= config.commons.iet %>は技術的負債となり得ます。</p>
+                <div class="legacyOrModern_button text-center">
+                    <button type="button" class="btn btn-secondary my-2 py-2" data-toggle="collapse" href="#legacyOrModern_contents" aria-expanded="false" aria-controls="legacyOrModern_contents"><i class="fas fa-fw fa-plus" aria-hidden="true"></i><span class="sr-only">開く</span></button>
+                </div>
+                <div id="legacyOrModern_contents" class="collapse">
+                    <p>今や多くの人が持っているスマートフォン。操作している手元をよく見ると、ほとんどの人は画面を縦向きにして使用していることでしょう。</p>
+                    <p>一方、パソコンの画面は横長です。</p>
+                    <p>現在のホームページは、パソコンの横長の画面でも、スマートフォンの縦長の画面でも、それぞれの画面に適したデザインで表示するように作られています。</p>
+                    <p class="mb-1">ただし、何もせずしてそうなっているわけではなく、世のWebデザイナーやプログラマーが工夫することで、そのようなデザインを提供することが初めて可能となります。</p>
+                    <p>スマートフォンが普及し始めた頃は、横長と縦長の両方に適したデザインを提供することは難しい課題でした。</p>
+                    <p>スマートフォンが登場して約10年が経過した今、Webの規格は新しく制定され、新しい端末へ適用できるように拡張が続けられました。</p>
+                    <p>しかし、Webのこうした新しい規格に完全には対応できていないソフトウェアがあります。</p>
+                    <p>――そう、<%= config.commons.iet %>です。</p>
+                    <p>新しく、便利で簡単に利用できる技術であればあるほど、<%= config.commons.iet %>は足かせになるのが現状です。</p>
+                    <p>極端に言えば、</p>
+                    <p class="my-2">「スマートフォンを取るか、<%= config.commons.iet %>を取るか。」</p>
+                    <p>それほどまでに、<%= config.commons.iet %>は技術的負債となり得ます。</p>
+                </div>
             </div>
         </section>
         <section class="container my-5 liabilities" id="liabilities">
@@ -163,102 +193,107 @@ const indexCounter = () => {
             </div>
             <p class="lead mb-3 text-center">ガタガタに崩れていくホームページ</p>
             <div class="liabilities_contents">
-                <p>ここまで<%= config.commons.iet %>を取り巻く現状について述べてきました。</p>
-                <p class="mb-3">具体的にどういった点が「技術的負債」になるのか、本ホームページを例に、Google Chromeと<%= config.commons.iet %>のそれぞれの表示について見てみましょう。</p>
-                <!-- 1. アイキャッチ -->
-                <h3 class="mt-3 mb-1">1. アイキャッチ</h3>
-                <p>本ホームページの最初に表示されるアイキャッチは、本来ならば<%- config.commons.ielm %>に<i class="fas fa-fw fa-ban magni1_5" aria-hidden="true"></i>が重なったロゴが画面の中央に表示されるようになっています。</p>
-                <div class="row">
-                    <div class="col-12 col-lg-6">
-                        <figure class="m-1 text-center">
-                            <a href="<%= relPath %>img/toppage_chrome.jpg" data-lightbox="toppage"><img src="<%= relPath %>img/toppage_chrome.jpg" alt="Google Chromeの表示" class="img-fluid border"></a>
-                            <figcaption>Google Chromeの表示</figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                        <figure class="m-1 text-center">
-                            <a href="<%= relPath %>img/toppage_ie.jpg" data-lightbox="toppage"><img src="<%= relPath %>img/toppage_ie.jpg" alt="<%= config.commons.iet %>の表示" class="img-fluid border"></a>
-                            <figcaption><%= config.commons.iet %>の表示</figcaption>
-                        </figure>
-                    </div>
+                <div class="liabilities_button text-center">
+                    <button type="button" class="btn btn-secondary my-2 py-2" data-toggle="collapse" href="#liabilities_contents" aria-expanded="false" aria-controls="liabilities_contents"><i class="fas fa-fw fa-plus" aria-hidden="true"></i><span class="sr-only">開く</span></button>
                 </div>
-                <p class="mt-1">しかし、<%= config.commons.iet %>では右端に寄ってしまっています。</p>
-                <!-- 2. 記事のアイキャッチ画像 -->
-                <h3 class="mt-3 mb-1">2. 記事のアイキャッチ画像</h3>
-                <p>実例記事一覧のアイキャッチ画像は、画像の横幅と高さが丁度良いサイズで表示されるようになっています。</p>
-                <div class="row">
-                    <div class="col-12 col-lg-6">
-                        <figure class="m-1 text-center">
-                            <a href="<%= relPath %>img/bgimage_chrome.jpg" data-lightbox="bgimage"><img src="<%= relPath %>img/bgimage_chrome.jpg" alt="Google Chromeの表示" class="img-fluid border"></a>
-                            <figcaption>Google Chromeの表示</figcaption>
-                        </figure>
+                <div id="liabilities_contents" class="collapse">
+                    <p>ここまで<%= config.commons.iet %>を取り巻く現状について述べてきました。</p>
+                    <p class="mb-3">具体的にどういった点が「技術的負債」になるのか、本ホームページを例に、Google Chromeと<%= config.commons.iet %>のそれぞれの表示について見てみましょう。</p>
+                    <!-- 1. アイキャッチ -->
+                    <h3 class="mt-3 mb-1">1. アイキャッチ</h3>
+                    <p>本ホームページの最初に表示されるアイキャッチは、本来ならば<%- config.commons.ielm %>に<i class="fas fa-fw fa-ban magni1_5" aria-hidden="true"></i>が重なったロゴが画面の中央に表示されるようになっています。</p>
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <figure class="m-1 text-center">
+                                <a href="<%= relPath %>img/toppage_chrome.jpg" data-lightbox="toppage"><img src="<%= relPath %>img/toppage_chrome.jpg" alt="Google Chromeの表示" class="img-fluid border"></a>
+                                <figcaption>Google Chromeの表示</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <figure class="m-1 text-center">
+                                <a href="<%= relPath %>img/toppage_ie.jpg" data-lightbox="toppage"><img src="<%= relPath %>img/toppage_ie.jpg" alt="<%= config.commons.iet %>の表示" class="img-fluid border"></a>
+                                <figcaption><%= config.commons.iet %>の表示</figcaption>
+                            </figure>
+                        </div>
                     </div>
-                    <div class="col-12 col-lg-6">
-                        <figure class="m-1 text-center">
-                            <a href="<%= relPath %>img/bgimage_ie.jpg" data-lightbox="bgimage"><img src="<%= relPath %>img/bgimage_ie.jpg" alt="<%= config.commons.iet %>の表示" class="img-fluid border"></a>
-                            <figcaption><%= config.commons.iet %>の表示</figcaption>
-                        </figure>
+                    <p class="mt-1">しかし、<%= config.commons.iet %>では右端に寄ってしまっています。</p>
+                    <!-- 2. 記事のアイキャッチ画像 -->
+                    <h3 class="mt-3 mb-1">2. 記事のアイキャッチ画像</h3>
+                    <p>実例記事一覧のアイキャッチ画像は、画像の横幅と高さが丁度良いサイズで表示されるようになっています。</p>
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <figure class="m-1 text-center">
+                                <a href="<%= relPath %>img/bgimage_chrome.jpg" data-lightbox="bgimage"><img src="<%= relPath %>img/bgimage_chrome.jpg" alt="Google Chromeの表示" class="img-fluid border"></a>
+                                <figcaption>Google Chromeの表示</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <figure class="m-1 text-center">
+                                <a href="<%= relPath %>img/bgimage_ie.jpg" data-lightbox="bgimage"><img src="<%= relPath %>img/bgimage_ie.jpg" alt="<%= config.commons.iet %>の表示" class="img-fluid border"></a>
+                                <figcaption><%= config.commons.iet %>の表示</figcaption>
+                            </figure>
+                        </div>
                     </div>
+                    <p class="mt-1">しかし、<%= config.commons.iet %>では縦に引き伸ばされてしまいます。</p>
+                    <!-- 3. グリッドレイアウト -->
+                    <h3 class="mt-3 mb-1">3. グリッドレイアウト</h3>
+                    <p>Google ChromeとFirefoxのダウンロードページへのご案内は、</p>
+                    <ul>
+                        <li>Google ChromeとFirefoxは2:1の比率で表示</li>
+                        <li>Google Chromeが先(パソコンでは左)</li>
+                    </ul>
+                    <p>となるようにデザインしています。</p>
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <figure class="m-1 text-center">
+                                <a href="<%= relPath %>img/grid_chrome.jpg" data-lightbox="grid"><img src="<%= relPath %>img/grid_chrome.jpg" alt="Google Chromeの表示" class="img-fluid border"></a>
+                                <figcaption>Google Chromeの表示</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <figure class="m-1 text-center">
+                                <a href="<%= relPath %>img/grid_ie.jpg" data-lightbox="grid"><img src="<%= relPath %>img/grid_ie.jpg" alt="<%= config.commons.iet %>の表示" class="img-fluid border"></a>
+                                <figcaption><%= config.commons.iet %>の表示</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <p class="mt-1">しかし、<%= config.commons.iet %>は</p>
+                    <ul>
+                        <li>それぞれの比率はおろか、横向きではなく縦向きに表示される</li>
+                        <li>Firefoxが先に表示</li>
+                    </ul>
+                    <p>と、根本的にデザインが崩れてしまっています。</p>
+                    <!-- 4. ページトップへ戻るボタン -->
+                    <h3 class="mt-3 mb-1">4. ページトップへ戻るボタン</h3>
+                    <p>本ホームページでは、ある程度スクロールすると右下にページトップへ戻るボタンが出現します。</p>
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <figure class="m-1 text-center">
+                                <a href="<%= relPath %>img/r2pt_chrome.jpg" data-lightbox="r2pt"><img src="<%= relPath %>img/r2pt_chrome.jpg" alt="Google Chromeの表示" class="img-fluid border"></a>
+                                <figcaption>Google Chromeの表示</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <figure class="m-1 text-center">
+                                <a href="<%= relPath %>img/r2pt_ie.jpg" data-lightbox="r2pt"><img src="<%= relPath %>img/r2pt_ie.jpg" alt="<%= config.commons.iet %>の表示" class="img-fluid border"></a>
+                                <figcaption><%= config.commons.iet %>の表示</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <p class="mt-1"><%= config.commons.iet %>では、このボタンが一部スクロールバーの裏側に隠れてしまいます。</p>
+                    <p>そのため、他のブラウザよりも面積が狭く、やや押しづらくなっています。</p>
+                    <hr>
+                    <p>本ホームページだけでも、少なからず影響が出ていることが分かるかと思います。</p>
+                    <p class="mt-1">そして、こうした<%= config.commons.iet %><strong>だけ</strong>に生じる問題に対して、今日もどこかで世の中のWebデザイナーやプログラマーが心を砕いています。</p>
+                    <p>シェア率が1割にも満たないブラウザに対して(しかもスマートフォンに限れば全く影響がない)、莫大な労力がかけられているのがホームページの現状なのです。</p>
+                    <p>――もし。</p>
+                    <p>もし、</p>
+                    <p>「<strong><%= config.commons.iet %>はマイナーだから気にしない</strong>」</p>
+                    <p>と仰って頂けるならば。</p>
+                    <p>その分の労力(人件費と技術料、そして時間)が少なくて済みます<small>(※最初から制作費用に含めておらず、オプションという場合もございます。その辺りはケースバイケースです)</small>。</p>
+                    <p class="mt-1">どうか、世のWebデザイナーやプログラマーを、<%= config.commons.iet %>から解放して頂けないでしょうか？</p>
+                    <p>ご検討のほど、よろしくお願いいたします。</p>
                 </div>
-                <p class="mt-1">しかし、<%= config.commons.iet %>では縦に引き伸ばされてしまいます。</p>
-                <!-- 3. グリッドレイアウト -->
-                <h3 class="mt-3 mb-1">3. グリッドレイアウト</h3>
-                <p>Google ChromeとFirefoxのダウンロードページへのご案内は、</p>
-                <ul>
-                    <li>Google ChromeとFirefoxは2:1の比率で表示</li>
-                    <li>Google Chromeが先(パソコンでは左)</li>
-                </ul>
-                <p>となるようにデザインしています。</p>
-                <div class="row">
-                    <div class="col-12 col-lg-6">
-                        <figure class="m-1 text-center">
-                            <a href="<%= relPath %>img/grid_chrome.jpg" data-lightbox="grid"><img src="<%= relPath %>img/grid_chrome.jpg" alt="Google Chromeの表示" class="img-fluid border"></a>
-                            <figcaption>Google Chromeの表示</figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                        <figure class="m-1 text-center">
-                            <a href="<%= relPath %>img/grid_ie.jpg" data-lightbox="grid"><img src="<%= relPath %>img/grid_ie.jpg" alt="<%= config.commons.iet %>の表示" class="img-fluid border"></a>
-                            <figcaption><%= config.commons.iet %>の表示</figcaption>
-                        </figure>
-                    </div>
-                </div>
-                <p class="mt-1">しかし、<%= config.commons.iet %>は</p>
-                <ul>
-                    <li>それぞれの比率はおろか、横向きではなく縦向きに表示される</li>
-                    <li>Firefoxが先に表示</li>
-                </ul>
-                <p>と、根本的にデザインが崩れてしまっています。</p>
-                <!-- 4. ページトップへ戻るボタン -->
-                <h3 class="mt-3 mb-1">4. ページトップへ戻るボタン</h3>
-                <p>本ホームページでは、ある程度スクロールすると右下にページトップへ戻るボタンが出現します。</p>
-                <div class="row">
-                    <div class="col-12 col-lg-6">
-                        <figure class="m-1 text-center">
-                            <a href="<%= relPath %>img/r2pt_chrome.jpg" data-lightbox="r2pt"><img src="<%= relPath %>img/r2pt_chrome.jpg" alt="Google Chromeの表示" class="img-fluid border"></a>
-                            <figcaption>Google Chromeの表示</figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                        <figure class="m-1 text-center">
-                            <a href="<%= relPath %>img/r2pt_ie.jpg" data-lightbox="r2pt"><img src="<%= relPath %>img/r2pt_ie.jpg" alt="<%= config.commons.iet %>の表示" class="img-fluid border"></a>
-                            <figcaption><%= config.commons.iet %>の表示</figcaption>
-                        </figure>
-                    </div>
-                </div>
-                <p class="mt-1"><%= config.commons.iet %>では、このボタンが一部スクロールバーの裏側に隠れてしまいます。</p>
-                <p>そのため、他のブラウザよりも面積が狭く、やや押しづらくなっています。</p>
-                <hr>
-                <p>本ホームページだけでも、少なからず影響が出ていることが分かるかと思います。</p>
-                <p class="mt-1">そして、こうした<%= config.commons.iet %><strong>だけ</strong>に生じる問題に対して、今日もどこかで世の中のWebデザイナーやプログラマーが心を砕いています。</p>
-                <p>シェア率が1割にも満たないブラウザに対して(しかもスマートフォンに限れば全く影響がない)、莫大な労力がかけられているのがホームページの現状なのです。</p>
-                <p>――もし。</p>
-                <p>もし、</p>
-                <p>「<strong><%= config.commons.iet %>はマイナーだから気にしない</strong>」</p>
-                <p>と仰って頂けるならば。</p>
-                <p>その分の労力(人件費と技術料、そして時間)が少なくて済みます<small>(※最初から制作費用に含めておらず、オプションという場合もございます。その辺りはケースバイケースです)</small>。</p>
-                <p class="mt-1">どうか、世のWebデザイナーやプログラマーを、<%= config.commons.iet %>から解放して頂けないでしょうか？</p>
-                <p>ご検討のほど、よろしくお願いいたします。</p>
             </div>
         </section>
 <%
