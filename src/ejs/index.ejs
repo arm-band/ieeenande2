@@ -114,10 +114,10 @@ const indexCounter = () => {
                     <p class="mb-1">それでは、数字ではどうでしょうか？</p>
                     <p>統計データを見ると、統計の手法や対象範囲によってバラつきはあるものの、<a href="http://gs.statcounter.com">http://gs.statcounter.com</a>という統計データサイトでは、世界のブラウザの<strong>約61%</strong>がGoogle Chromeとなっています(2019年1月現在)。</p>
                     <p>一方の<%= config.commons.iet %>は<strong>約3%</strong>となっています。</p>
-                    <img src="<%= relPath %>img/statcounter_browser_world.png" alt="世界のブラウザシェア率(2018/1～2019/1)。2019/1現在、Google Chromeは約61%、<%= config.commons.iet %>は約9.4%となっています。" class="img-fluid">
+                    <div><a href="<%= relPath %>img/statcounter_browser_world.png" data-lightbox><img src="<%= relPath %>img/statcounter_browser_world.png" alt="世界のブラウザシェア率(2018/1～2019/1)。2019/1現在、Google Chromeは約61%、<%= config.commons.iet %>は約9.4%となっています。" class="img-fluid"></a></div>
                     <p class="mt-2">日本国内で限定するとどうでしょうか？</p>
                     <p>割合こそ下がるものの、Google Chromeは<strong>約43%</strong>。一方の<%= config.commons.iet %>は<strong>約9%</strong>と<strong>1割を切って</strong>います(2019年1月現在)。日本国内でも、Google Chromeと<%= config.commons.iet %>は実に4倍以上の差があります！</p>
-                    <img src="<%= relPath %>img/statcounter_browser_japan.png" alt="日本のブラウザシェア率(2018/1～2019/1)。2019/1現在、Google Chromeは約43%、<%= config.commons.iet %>は約9%となっています。" class="img-fluid">
+                    <dvi><a href="<%= relPath %>img/statcounter_browser_japan.png" data-lightbox><img src="<%= relPath %>img/statcounter_browser_japan.png" alt="日本のブラウザシェア率(2018/1～2019/1)。2019/1現在、Google Chromeは約43%、<%= config.commons.iet %>は約9%となっています。" class="img-fluid"></a></dvi>
                     <p class="mt-2">このように、世の中の大多数の人はGoogle Chromeを使ってホームページを見ているのです。</p>
                     <p>しかも、来年には<%= config.commons.iet %>のシェア率は<strong>さらに下がる</strong>ことが見込まれています<small>(※Windows7のサポート終了に伴い、<%= config.commons.iet %>を標準とするパソコンが減少するため)</small>。</p>
                 </div>
@@ -171,13 +171,13 @@ const indexCounter = () => {
                 <div class="row">
                     <div class="col-12 col-lg-6">
                         <figure class="m-1 text-center">
-                            <a href="<%= relPath %>img/toppage_chrome.jpg"><img src="<%= relPath %>img/toppage_chrome.jpg" alt="Google Chromeの表示" class="img-fluid border"></a>
+                            <a href="<%= relPath %>img/toppage_chrome.jpg" data-lightbox="toppage"><img src="<%= relPath %>img/toppage_chrome.jpg" alt="Google Chromeの表示" class="img-fluid border"></a>
                             <figcaption>Google Chromeの表示</figcaption>
                         </figure>
                     </div>
                     <div class="col-12 col-lg-6">
                         <figure class="m-1 text-center">
-                            <a href="<%= relPath %>img/toppage_ie.jpg"><img src="<%= relPath %>img/toppage_ie.jpg" alt="<%= config.commons.iet %>の表示" class="img-fluid border"></a>
+                            <a href="<%= relPath %>img/toppage_ie.jpg" data-lightbox="toppage"><img src="<%= relPath %>img/toppage_ie.jpg" alt="<%= config.commons.iet %>の表示" class="img-fluid border"></a>
                             <figcaption><%= config.commons.iet %>の表示</figcaption>
                         </figure>
                     </div>
@@ -189,13 +189,13 @@ const indexCounter = () => {
                 <div class="row">
                     <div class="col-12 col-lg-6">
                         <figure class="m-1 text-center">
-                            <a href="<%= relPath %>img/bgimage_chrome.jpg"><img src="<%= relPath %>img/bgimage_chrome.jpg" alt="Google Chromeの表示" class="img-fluid border"></a>
+                            <a href="<%= relPath %>img/bgimage_chrome.jpg" data-lightbox="bgimage"><img src="<%= relPath %>img/bgimage_chrome.jpg" alt="Google Chromeの表示" class="img-fluid border"></a>
                             <figcaption>Google Chromeの表示</figcaption>
                         </figure>
                     </div>
                     <div class="col-12 col-lg-6">
                         <figure class="m-1 text-center">
-                            <a href="<%= relPath %>img/bgimage_ie.jpg"><img src="<%= relPath %>img/bgimage_ie.jpg" alt="<%= config.commons.iet %>の表示" class="img-fluid border"></a>
+                            <a href="<%= relPath %>img/bgimage_ie.jpg" data-lightbox="bgimage"><img src="<%= relPath %>img/bgimage_ie.jpg" alt="<%= config.commons.iet %>の表示" class="img-fluid border"></a>
                             <figcaption><%= config.commons.iet %>の表示</figcaption>
                         </figure>
                     </div>
@@ -212,13 +212,13 @@ const indexCounter = () => {
                 <div class="row">
                     <div class="col-12 col-lg-6">
                         <figure class="m-1 text-center">
-                            <a href="<%= relPath %>img/grid_chrome.jpg"><img src="<%= relPath %>img/grid_chrome.jpg" alt="Google Chromeの表示" class="img-fluid border"></a>
+                            <a href="<%= relPath %>img/grid_chrome.jpg" data-lightbox="grid"><img src="<%= relPath %>img/grid_chrome.jpg" alt="Google Chromeの表示" class="img-fluid border"></a>
                             <figcaption>Google Chromeの表示</figcaption>
                         </figure>
                     </div>
                     <div class="col-12 col-lg-6">
                         <figure class="m-1 text-center">
-                            <a href="<%= relPath %>img/grid_ie.jpg"><img src="<%= relPath %>img/grid_ie.jpg" alt="<%= config.commons.iet %>の表示" class="img-fluid border"></a>
+                            <a href="<%= relPath %>img/grid_ie.jpg" data-lightbox="grid"><img src="<%= relPath %>img/grid_ie.jpg" alt="<%= config.commons.iet %>の表示" class="img-fluid border"></a>
                             <figcaption><%= config.commons.iet %>の表示</figcaption>
                         </figure>
                     </div>
@@ -235,13 +235,13 @@ const indexCounter = () => {
                 <div class="row">
                     <div class="col-12 col-lg-6">
                         <figure class="m-1 text-center">
-                            <a href="<%= relPath %>img/r2pt_chrome.jpg"><img src="<%= relPath %>img/r2pt_chrome.jpg" alt="Google Chromeの表示" class="img-fluid border"></a>
+                            <a href="<%= relPath %>img/r2pt_chrome.jpg" data-lightbox="r2pt"><img src="<%= relPath %>img/r2pt_chrome.jpg" alt="Google Chromeの表示" class="img-fluid border"></a>
                             <figcaption>Google Chromeの表示</figcaption>
                         </figure>
                     </div>
                     <div class="col-12 col-lg-6">
                         <figure class="m-1 text-center">
-                            <a href="<%= relPath %>img/r2pt_ie.jpg"><img src="<%= relPath %>img/r2pt_ie.jpg" alt="<%= config.commons.iet %>の表示" class="img-fluid border"></a>
+                            <a href="<%= relPath %>img/r2pt_ie.jpg" data-lightbox="r2pt"><img src="<%= relPath %>img/r2pt_ie.jpg" alt="<%= config.commons.iet %>の表示" class="img-fluid border"></a>
                             <figcaption><%= config.commons.iet %>の表示</figcaption>
                         </figure>
                     </div>

@@ -9,7 +9,7 @@
         "hum": "npm-run-all -s kongou eshaku",
         "jah": "node ./bin/katou",
         "svaha": "gulp",
-        "kongou": "npm-run-all -p vidya raja myouou kashou zanmai gue shingon",
+        "kongou": "npm-run-all -p vidya raja myouou kashou zanmai gue shingon surya",
         "vidya": "copyfiles -f \"./node_modules/bootstrap-honoka/scss/*.scss\" \"./src/scss/assets/bootstrap\"",
         "raja": "copyfiles -f \"./node_modules/bootstrap-honoka/scss/honoka/_honoka.scss\" \"./src/scss/assets/bootstrap/honoka\"",
         "myouou": "copyfiles -f \"./node_modules/bootstrap-honoka/scss/honoka/*.scss\" \"./src/scss/assets/bootstrap/honoka/honoka\"",
@@ -17,6 +17,7 @@
         "zanmai": "copyfiles -f \"./node_modules/bootstrap/scss/mixins/*.scss\" \"./src/scss/assets/bootstrap/honoka/bootstrap/scss/mixins\"",
         "gue": "copyfiles -f \"./node_modules/bootstrap/scss/utilities/*.scss\" \"./src/scss/assets/bootstrap/honoka/bootstrap/scss/utilities\"",
         "shingon": "copyfiles -f \"./node_modules/bootstrap/scss/vendor/*.scss\" \"./src/scss/assets/bootstrap/honoka/bootstrap/scss/vendor\"",
+        "surya": "node ./bin/nichiten && copyfiles -f \"./node_modules/lightbox2/dist/images/*\" \"./src/images/\"",
         "katen": "node ./dist/daishi/bin/www",
         "agni": "node ./bin/agni",
         "eshaku": "npm-run-all -p katen agni",
@@ -71,7 +72,8 @@
         "http-errors": "^1.6.2",
         "morgan": "^1.9.0",
         "opener": "^1.5.1",
-        "ie-buster": "^1.1.0"
+        "ie-buster": "^1.1.0",
+        "lightbox2": "^2.10.0"
     },
     "engines": {
         "node": ">= 8.5.0",

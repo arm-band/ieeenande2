@@ -13,5 +13,7 @@ package-lock.json
 /dist/css/
 /dist/js/
 /dist/img/
+/dist/images/
 /dist/*.xml
-src/img/
+/src/img/
+/src/images/

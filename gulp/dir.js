@@ -5,7 +5,8 @@ module.exports = {
         easing     : './node_modules/jquery.easing',
         bootstrap  : './node_modules/bootstrap-honoka/dist/js',
         bowser     : './node_modules/bowser',
-        iebuster   : './node_modules/ie-buster/dist'
+        iebuster   : './node_modules/ie-buster/dist',
+        lightbox   : './node_modules/lightbox2/dist'
     },
     src: {
         ejs        : './src/ejs',
@@ -13,6 +14,7 @@ module.exports = {
         assets     : '/assets',
         js         : './src/js',
         img        : './src/img',
+        image      : './src/images',
         favicon    : './src/favicon'
     },
     config: {
@@ -35,7 +37,8 @@ module.exports = {
         articles   : './dist/news/articles',
         css        : './dist/css',
         js         : './dist/js',
-        img        : './dist/img'
+        img        : './dist/img',
+        image      : './dist/images'
     },
     sg: {
         html       : './sg/dist',
