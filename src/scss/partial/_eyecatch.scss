@@ -3,7 +3,7 @@
 @include eyecatchBGImg("../img/eyecatch.jpg");
 .eyecatch {
     margin-top: $navbar-height;
-    height: 20vh;
+    height: 40vh;
     @include eyecatchCenter();
     &_header:not(.smallText) {
         @include eyecatchTypo(calc(4rem + 4vw));
