@@ -21,10 +21,14 @@
 .upper {
     min-height: calc(100vh - (1.5rem * 2) - #{$footer-height}); //コンテンツの高さが足りなくてもフッタを最下部に表示するように //1.5rem * 2:my-4で足される上端と下端のマージンの合計
 }
+.fab, .fas, .far {
+    &.magni1_5 {
+        font-size: 1.5rem;
+    }
+}
 .fab {
     &.fa {
-        &-internet-explorer, &-firefox, &-chrome, &-safari {
-            font-size: 1.5rem;
+        &-internet-explorer, &-firefox, &-chrome, &-safari, &-edge {
             line-height: 2;
             margin-top: -0.7rem;
         }
@@ -39,6 +43,9 @@
         }
         &-safari {
             color: #086EDA;
+        }
+        &-edge {
+            color: #0078D7;
         }
     }
 }
@@ -72,7 +79,32 @@
     }
     background-color: $bg-color;
     color: $color;
-    div:not(.text-center) p:not(.text-center) {
+    p {
+        margin-bottom: 0.4rem;
+    }
+    blockquote {
+        background-color: $bg-color2;
+        padding: 0.6rem 1rem;
+        position: relative;
+        &:before {
+            content: "\f10d";
+            font: {
+                family: "Font Awesome 5 Free";
+                size: 2rem;
+                weight: 900;
+            }
+            float: left;
+            position: absolute;
+            top: 0;
+            left: 0.4rem;
+            color: $bg-color3;
+            opacity: 0.3;
+        }
+    }
+    q, figcaption {
+        font-style: oblique;
+    }
+    div:not(.text-center) p:not(.text-center), p:not(.card-text) {
         text-indent: 1rem;
         & .fa-fw {
             margin: {
@@ -89,8 +121,10 @@
             padding-left: 1.6rem;
         }
     }
-    .fixed_anchor {
-        @include fixedAnchor();
+    .btn.btn-primary {
+        &, &:link, &:visited, &:hover, &:active, &:focus {
+            color: $bg-color;
+        }
     }
 }
 

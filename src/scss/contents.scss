@@ -43,16 +43,19 @@
         ol {
             padding-left: 2rem;
         }
+        img {
+            max-width: 100%;
+        }
     }
     &_share {
         .news_btn {
-            a, a:link {
+            &, &:link {
                 color: darken($bg-color, 4%);
                 .fa.fa-fw {
                     margin-right: 0.1rem;
                 }
             }
-            a:hover, a:active, a:focus {
+            &:hover, &:active, &:focus {
                 text-decoration: none;
                 color: $bg-color;
             }

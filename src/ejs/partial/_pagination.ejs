@@ -7,7 +7,7 @@
         const prev = pages - 1;
 %>
                 <li class="page-item">
-                    <a href="<%= relPath %>news/<%= name + prev %>.html" class="page-link" aria-label="前のページへ">
+                    <a href="<%= relPath %>news/<%= name + prev %>.html" class="page-link rounded-0" aria-label="前のページへ">
                         <span aria-hidden="true">«</span>
                     </a>
                 </li>
@@ -18,11 +18,11 @@
         //今いるページの場合、activeクラスを付与
         if(i === pages) {
 %>
-                <li class="page-item active"><a href="<%= relPath %>news/<%= name + i %>.html" class="page-link"><%= i %></a></li>
+                <li class="page-item active"><a href="<%= relPath %>news/<%= name + i %>.html" class="page-link rounded-0"><%= i %></a></li>
 <%
         } else {
 %>
-                <li class="page-item"><a href="<%= relPath %>news/<%= name + i %>.html" class="page-link"><%= i %></a></li>
+                <li class="page-item"><a href="<%= relPath %>news/<%= name + i %>.html" class="page-link rounded-0"><%= i %></a></li>
 <%
         }
     }
@@ -31,7 +31,7 @@
         const next = pages + 1;
 %>
                 <li class="page-item">
-                    <a href="<%= relPath %>news/<%= name + next %>.html" class="page-link" aria-label="次のページへ">
+                    <a href="<%= relPath %>news/<%= name + next %>.html" class="page-link rounded-0" aria-label="次のページへ">
                         <span aria-hidden="true">»</span>
                     </a>
                 </li>

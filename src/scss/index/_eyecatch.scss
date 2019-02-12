@@ -11,6 +11,6 @@
     overflow: hidden;
     @include eyecatchCenter();
     &_header {
-        @include eyecatchTypo(calc(4em + 4vw));
+        @include eyecatchTypo(calc(10rem + 4vw));
     }
 }

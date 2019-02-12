@@ -11,8 +11,9 @@ $accent-color: adjust-hue($main-color, 165deg);
 $link-color: adjust-hue($main-color, 195deg);
 $link-v-color: darken($link-color, 15%);
 $link-ha-color: darken($link-color, 8%);
-$bg-color2: lighten(#FF8E17, 43%);
-$bg-color3: lighten(#FF8E17, 8%);
+$complementary-color: #FF8E17;
+$bg-color2: lighten($complementary-color, 43%);
+$bg-color3: lighten($complementary-color, 8%);
 
 // ============================================= *
 //                                               *
@@ -46,4 +47,7 @@ ul, ol {
         }
         padding-start: 0;
     }
+}
+* {
+    @include go();
 }

@@ -27,7 +27,7 @@
 //                                                *
 // ============================================= */
 .index .indexmain {
-    .topics, .aboutIe, .ieDanger {
+    .topics, .aboutIe, .ieProbrem, .legacyOrModern, .liabilities {
         .lead {
             &:before,&:after {
                 content: "";
@@ -46,8 +46,57 @@
             }
         }
     }
-    .aboutIe {
+    .aboutIe, .download {
         background-color: $bg-color2;
+    }
+    .articles {
+        background-color: $main-color3;
+        &_header, &_contents {
+            & > h2, & > p {
+                color: $bg-color;
+            }
+        }
+    }
+    .grid_container, .grid_container2 {
+        display: grid;
+    }
+    .grid_container {
+        @include media-breakpoint-down(lg) {
+            grid: {
+                gap: 0.4rem;
+                template-columns: 1fr;
+            }
+        }
+        @include media-breakpoint-up(lg) {
+            grid: {
+                gap: 0.8rem;
+                template-columns: 1fr 1fr;
+            }
+        }
+    }
+    .grid_container2 {
+        @include media-breakpoint-down(lg) {
+            grid: {
+                gap: 0.4rem;
+                template-columns: 1fr;
+            }
+        }
+        @include media-breakpoint-up(lg) {
+            grid: {
+                gap: 0.8rem;
+                template-columns: 2fr 1fr;
+            }
+        }
+        .grid_column {
+            @include media-breakpoint-up(lg) {
+                &:first-of-type {
+                    order: 2;
+                }
+                &:last-of-type {
+                    order: 1;
+                }
+            }
+        }
     }
 }
 body:not(.mobileSafari).index .indexmain .origin {

@@ -31,7 +31,7 @@ const indexCounter = () => {
         <section class="container-fluid my-5 topics">
             <div class="container">
                 <div class="page-header text-center topics_header">
-                    <h2 class="mb-1">「<%- config.commons.iel %>の使用を止めるように」</h2>
+                    <h2 class="mb-1">「<%- config.commons.iel %><%= config.commons.iet %>の使用を止めるように」</h2>
                 </div>
             <p class="lead mb-3 text-center"><span class="mr-1">ご存知でしたか？</span>Microsoftから<%= config.commons.iet %>の使用を止めるように要請が出ていたことを</p>
                 <div class="topics_contents">
@@ -39,29 +39,53 @@ const indexCounter = () => {
                 </div>
             </div>
         </section>
-        <section class="container-fluid py-5 aboutIe">
+        <section class="container-fluid my-5 index">
+            <div class="container">
+                <h4 class="mt-1 mb-0 text-center">目次</h4>
+                <div class="grid_container mt-3">
+                    <div class="grid_column">
+                        <h5><a href="#aboutIe"><%- config.commons.ielm %><%= config.commons.iet %>とは？</a></h5>
+                        <ul>
+                            <li><a href="#aboutIe"><%= config.commons.iet %>とは？</a></li>
+                            <li><a href="#ieNotYahoo"><%= config.commons.iet %>？Yahoo!JAPANじゃないの？</a></li>
+                            <li><a href="#browsers">ほかにどんなブラウザがあるの？</a></li>
+                            <li><a href="#statistics">世の中の60%以上はGoogle Chrome</a></li>
+                        </ul>
+                    </div>
+                    <div class="grid_column">
+                        <h5><a href="#ieProbrem"><%- config.commons.ielm %><%= config.commons.iet %>の問題</a></h5>
+                        <ul>
+                            <li><a href="#ieProbrem"><%= config.commons.iet %>の問題</a></li>
+                            <li><a href="#legacyOrModern"><%= config.commons.iet %>か？スマートフォンか？</a></li>
+                            <li><a href="#liabilities"><%= config.commons.iet %>の「技術的負債」</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid py-5 aboutIe" id="aboutIe">
             <div class="container">
                 <div class="page-header text-center aboutIe_header">
-                    <h2 class="mb-1"><%- config.commons.iel %>とは？</h2>
+                    <h2 class="mb-1"><%- config.commons.iel %><%= config.commons.iet %>とは？</h2>
                 </div>
                 <p class="lead mb-3 text-center"><%= config.commons.iet %><span class="mx-1">＝</span>青い「e」のアイコン</p>
                 <div class="aboutIe_contents mb-4">
                     <p class="mb-1">まずはちょっと思い出してください。あなたがパソコンで<a href="https://www.yahoo.co.jp">Yahoo!JAPAN</a>を開くとき、どういったアイコンをクリックしますか？</p>
                     <img src="./img/ie_taskbar_icon.jpg" alt="タスクバーのIEのアイコン" class="ml-3">
-                    <p>この黄色い輪がついた青い「e」のアイコン(<i class="fab fa-fw fa-internet-explorer" aria-hidden="true"></i>)でしょうか？</p>
-                    <p>まさにそれです。実はこの<i class="fab fa-fw fa-internet-explorer" aria-hidden="true"></i>のアイコンをクリックして起動するソフトウェアが、「<%= config.commons.iet %>(インターネット・エクスプローラ)」と呼ばれるものなのです。</p>
+                    <p>この黄色い輪がついた青い「e」のアイコン(<%- config.commons.ielm %>)でしょうか？</p>
+                    <p>まさにそれです。実はこの<%- config.commons.ielm %>のアイコンをクリックして起動するソフトウェアが、「<%= config.commons.iet %>(インターネット・エクスプローラ)」と呼ばれるものなのです。</p>
                 </div>
-                <div class="page-header text-center ieNotYahoo_header">
-                    <h2 class="mb-1"><%- config.commons.iel %>？Yahoo!JAPANじゃないの？</h2>
+                <div class="page-header text-center ieNotYahoo_header" id="ieNotYahoo">
+                    <h2 class="mb-1"><%- config.commons.iel %><%= config.commons.iet %>？Yahoo!JAPANじゃないの？</h2>
                 </div>
                 <p class="lead mb-3 text-center"><%= config.commons.iet %>は「ソフトウェア」、Yahoo!JAPANは「ホームページ」</p>
                 <div class="ieNotYahoo_contents mb-4">
                     <p>はい、意識はしないかもしれませんが、実は別のものなのです。</p>
                     <p>Yahoo!JAPANはインターネットから情報を検索する、というやや特殊な役割を持っていますが、ブログの記事やニュースメディアと同じようにあくまで「ソフトウェアで開くホームページの1つ」です。</p>
-                    <p>逆に、こうしたホームページを開くために使うソフトウェアを「<strong>ブラウザ</strong>(「(本や雑誌を)ざっと読む、拾い読みする」という意味)」といいます。</p>
+                    <p>逆に、こうしたホームページを開くために使うソフトウェアを「<strong>ブラウザ</strong>」といいます。<small>なお、ブラウザは「(本や雑誌を)ざっと読む、拾い読みする」という意味の英語に由来します。</small></p>
                     <p><%= config.commons.iet %>はブラウザ(ソフトウェア)の一種です。</p>
                 </div>
-                <div class="page-header text-center browsers_header">
+                <div class="page-header text-center browsers_header" id="browsers">
                     <h2 class="mb-1">ほかにどんなブラウザがあるの？</h2>
                 </div>
                 <p class="lead mb-3 text-center">代表的なブラウザは「Chrome」「Safari」「Firefox」</p>
@@ -69,152 +93,257 @@ const indexCounter = () => {
                     <p><%= config.commons.iet %>がブラウザの「一種」ということは、他にもブラウザがあるということになります。</p>
                     <p>代表的なものとしては、以下のブラウザが挙げられます。</p>
                     <ul class="fa-ul mb-3">
-                        <li class="mb-1"><i class="fab fa-li fa-chrome" aria-hidden="true"></i>Google Chrome(グーグル・クローム)</li>
-                        <li class="mb-1"><i class="fab fa-li fa-firefox" aria-hidden="true"></i>Safari(サファリ)</li>
-                        <li class="mb-1"><i class="fab fa-li fa-safari" aria-hidden="true"></i>Firefox(ファイアフォックス)</li>
+                        <li class="mb-1"><i class="fab fa-li fa-chrome magni1_5" aria-hidden="true"></i>Google Chrome(グーグル・クローム)</li>
+                        <li class="mb-1"><i class="fab fa-li fa-firefox magni1_5" aria-hidden="true"></i>Safari(サファリ)</li>
+                        <li class="mb-1"><i class="fab fa-li fa-safari magni1_5" aria-hidden="true"></i>Firefox(ファイアフォックス)</li>
+                        <li class="mb-1"><i class="fab fa-li fa-edge magni1_5" aria-hidden="true"></i>Edge(エッジ)</li>
                     </ul>
                     <p>SafariはiPhoneに標準搭載されているブラウザです。Google ChromeもiPhoneではないスマートフォン(Android(アンドロイド))に標準搭載されています。</p>
                     <p>そのため、SafariとGoogle Chromeはスマートフォンを使ったことのある方ならおなじみかもしれません。</p>
                     <p>ちなみに、<a href="https://www.google.com/chrome/">Google Chrome</a>はパソコンにもインストールできます。同じようにパソコンにインストールできるブラウザとして、<a href="https://www.mozilla.org/ja/firefox/new/">Firefox</a>があります。どちらも無料です。</p>
+                    <p>また、お使いのパソコンが新しい(Windows10)場合、<%- config.commons.ielm %><%- config.commons.iet %>とロゴが似ている<i class="fab fa-fw fa-edge magni1_5" aria-hidden="true"></i>Edgeというブラウザが標準搭載されています。</p>
+                </div>
+                <div class="page-header text-center statistics_header" id="statistics">
+                    <h2 class="mb-1">世の中の60%以上はGoogle Chrome</h2>
+                </div>
+                <p class="lead mb-3 text-center"><%= config.commons.iet %>はたったの3%！</p>
+                <div class="statistics_contents">
+                    <p>「Google Chrome？Safari？聞いたことないなぁ……」</p>
+                    <p>もしかしたら、そう感じるかもしれません。</p>
+                    <p>しかし、先ほども述べたように、Google ChromeやSafariはスマートフォンに標準搭載されていますので、意識せずともお世話になっている方も多いはずです。</p>
+                    <p class="mb-1">それでは、数字ではどうでしょうか？</p>
+                    <p>統計データを見ると、統計の手法や対象範囲によってバラつきはあるものの、<a href="http://gs.statcounter.com">http://gs.statcounter.com</a>という統計データサイトでは、世界のブラウザの<strong>約61%</strong>がGoogle Chromeとなっています(2019年1月現在)。</p>
+                    <p>一方の<%= config.commons.iet %>は<strong>約3%</strong>となっています。</p>
+                    <img src="<%= relPath %>img/statcounter_browser_world.png" alt="世界のブラウザシェア率(2018/1～2019/1)。2019/1現在、Google Chromeは約61%、<%= config.commons.iet %>は約9.4%となっています。" class="img-fluid">
+                    <p class="mt-2">日本国内で限定するとどうでしょうか？</p>
+                    <p>割合こそ下がるものの、Google Chromeは<strong>約43%</strong>。一方の<%= config.commons.iet %>は<strong>約9%</strong>と<strong>1割を切って</strong>います(2019年1月現在)。日本国内でも、Google Chromeと<%= config.commons.iet %>は実に4倍以上の差があります！</p>
+                    <img src="<%= relPath %>img/statcounter_browser_japan.png" alt="日本のブラウザシェア率(2018/1～2019/1)。2019/1現在、Google Chromeは約43%、<%= config.commons.iet %>は約9%となっています。" class="img-fluid">
+                    <p class="mt-2">このように、世の中の大多数の人はGoogle Chromeを使ってホームページを見ているのです。</p>
+                    <p>しかも、来年には<%= config.commons.iet %>のシェア率は<strong>さらに下がる</strong>ことが見込まれています<small>(※Windows7のサポート終了に伴い、<%= config.commons.iet %>を標準とするパソコンが減少するため)</small>。</p>
                 </div>
             </div>
         </section>
-        <section class="container my-5 ieDanger">
-            <div class="page-header text-center ieDanger_header">
-                <h2 class="mb-1"><%- config.commons.iel %>の危険性</h2>
+        <section class="container my-5 ieProbrem" id="ieProbrem">
+            <div class="page-header text-center ieProbrem_header">
+                <h2 class="mb-1"><%- config.commons.iel %><%= config.commons.iet %>の問題</h2>
             </div>
             <p class="lead mb-3 text-center">互換性のために残されているに過ぎない<%= config.commons.iet %></p>
-            <div class="ieDanger_contents">
+            <div class="ieProbrem_contents">
                 <p>さて、<%= config.commons.iet %>の何が問題なのでしょうか？</p>
-                <p><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/The-perils-of-using-Internet-Explorer-as-your-default-browser/ba-p/331732">最初に挙げた記事</a>では、<%= config.commons.iet %>は「古いWebアプリケーションを動作させる互換性のための解決策」としています。</p>
-                <p>逆に、ホームページを司る技術の最新の規格への対応は遅れがちで、「パソコンとスマートフォンの双方に適したホームページデザインを構築する技術」も、対応していなかったり、対応していたとしても一部分だけで完全ではなかったりします。</p>
-                <p>日進月歩のIT分野の、特にWebに関する技術は移り変わりが早いです。1年前の技術は古いとも言われるほどあっという間です。</p>
-                <p>その中にあり、先ほどの「パソコンとスマートフォンの双方に適したホームページデザインを構築する技術」は2年前に発表された規格にも関わらず、数あるブラウザの中で<%= config.commons.iet %>だけが「一部対応」に留まっています。</p>
-                <p>つまり、ホームページが<%= config.commons.iet %>でも問題なく見られるようにするには、スマートフォンで見るための利便性を犠牲にする必要があるのです。</p>
+                <p><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/The-perils-of-using-Internet-Explorer-as-your-default-browser/ba-p/331732">最初に挙げた記事</a>では、<%= config.commons.iet %>は<q>古いWebアプリケーションを動作させる互換性のためのソリューション</q>と述べています。</p>
+                <p>また、<a href="https://blogs.technet.microsoft.com/jpieblog/2018/07/18/internet-explorer-support/">Microsoftは2018年7月に</a>も<q>現在の世の中にあふれるリッチなコンテンツは、すでに <%= config.commons.iet %> ではサポートしていない最新技術を利用して実現</q>と、<%= config.commons.iet %>がモダンな技術に対応できていないことを認めています。</p>
+                <p>さらに過去にさかのぼると、<a href="https://blogs.windows.com/japan/2015/08/24/evaeyeedge/">Micorosftは2015年8月に</a><q>セキュリティ対策などのマイナーアップデートは今後も行われますが、新機能が追加される予定はありません</q>と発表しており、<%= config.commons.iet %>の新しい技術への対応はかなり前から実施しない方針であることを明らかにしていました。</p>
+                <p>その上で<q>Legacy Web から Modern Web への移行を十分に余裕をもった計画で検討を進める必要がある</q>と、モダンな環境に移行するように呼びかけを行っています。</p>
+                <p><%= config.commons.iet %>は、開発元・公式であるMicrosoftからも他への移行を求められているのです。</p>
             </div>
         </section>
-<h3>参考</h3>
-<a href="https://ie-buster.qranoko.jp/">IE Buster - IEの亡霊からWeb制作者を守る「IEバスター」</a><br>
-<a href="https://caniuse.com/#feat=css-grid">Can I use... Support tables for HTML5, CSS3, etc</a><br>
-<a href="https://caniuse.com/#feat=flexbox">Can I use... Support tables for HTML5, CSS3, etc</a><br>
-<a href="https://gk2.jp/2018-statistics-pc-sp-browser-usage-check-share-rate-of-japanese-iphone-users-too/">【2018年の統計】PC・SPのブラウザ利用チェック。日本のiPhoneユーザーのシェア率も！ | 外国人の彼女2.0</a><br>
-<a href="https://twitter.com/Bredtn_1et/status/1034599994240598016">アルム＝バンド@Lravel+Vue始めましたさんのツイート: &quot;IEのここが凄い！ ・時々固まる ・最新の11でも最新どころか数年前の仕様にすら対応してない ・cssグラデーションなど、独自記法がある ・バージョンごとに互換性がない ・下位互換を使わせたがる ・Windowsに標準で付いてきて使用者が多い ・公式も匙を投げた IEのここがダメ！ ・上記全て、存在自体&quot;</a><br>
-<a href="https://twitter.com/chisamikan/status/1030578137984200704">千紗みかん⚓️北極星と船霊達さんのツイート: &quot;IEで泣いた事案の一例 https://t.co/pURA8SmyOt&quot;</a><br>
-<a href="https://twitter.com/chisamikan/status/1030323545174228994">千紗みかん⚓️北極星と船霊達さんのツイート: &quot;GoogleフォントがIE11で正常に表示されなくなった [CSS] on @Qiita https://t.co/E2O4bqZpn0&quot;</a><br>
-<a href="https://qiita.com/chisamikan/items/c4d37754d175c17fbe41">GoogleフォントがIE11で正常に表示されなくなった - Qiita</a><br>
-<a href="https://googlefonts.github.io/japanese/#roundedmplus1c">Google Fonts + Japanese • Google Fonts + 日本語</a><br>
-<a href="https://twitter.com/Stocker_jp/status/971557334743891968">なつき@Webデザインスクール土曜開催さんのツイート: &quot;&quot;IE対応と言われたら金額倍くらいを提示したい&quot; https://t.co/w9fWn0X3iG&quot;</a><br>
-<a href="https://anond.hatelabo.jp/20180308013517">IE対応と言われたら金額倍くらいを提示したい</a><br>
-<a href="https://japanese.engadget.com/2019/02/08/internet-explorer-ie/">マイクロソフト、企業に<%= config.commons.iet %>の使用をやめるよう要請。「IEは技術的負債もたらす」 - Engadget 日本版</a><br>
-<a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/The-perils-of-using-Internet-Explorer-as-your-default-browser/ba-p/331732">The perils of using <%= config.commons.iet %> as your default browser - Microsoft Tech Community - 331732</a><br>
-<a href="https://twitter.com/hashtag/IE%E5%AF%BE%E5%BF%9C%E3%81%AF%E7%89%B9%E5%88%A5%E6%96%99%E9%87%91%E5%88%B6%E3%81%AB%E3%81%99%E3%81%B9%E3%81%8D?src=hash">ハッシュタグ #IE対応は特別料金制にすべき</a><br>
-<a href="https://twitter.com/hashtag/IE%E6%92%B2%E6%BB%85?src=hash">ハッシュタグ #IE撲滅</a><br>
-<a href="https://twitter.com/hashtag/IE%E6%92%B2%E6%BB%85%E6%B4%BB%E5%8B%95?src=hash">ハッシュタグ #IE撲滅活動</a><br>
-<a href="https://twitter.com/hashtag/IE%E6%92%B2%E6%BB%85%E5%A7%94%E5%93%A1%E4%BC%9A?src=hash">ハッシュタグ #IE撲滅委員会</a>
-        <section class="container my-5 aboutpage fixed_anchor" id="aboutpage">
-            <div class="page-header mb-3 text-center features_header">
-                <h2>このサイトについて<small class="ml-3">About</small></h2>
+        <section class="container my-5 legacyOrModern" id="legacyOrModern">
+            <div class="page-header text-center legacyOrModern_header">
+                <h2 class="mb-1"><%= config.commons.iet %>か？スマートフォンか？</h2>
             </div>
-            <div class="row about_contents">
-                <div class="col-12 col-md-4 mb-3">
-                    <div class="card h-100 border-0">
-                        <div class="card-header px-2 py-3 text-center bg-white border-0">
-                            <i class="fab fa-fw fa-5x fa-gulp" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-2 py-3 text-center">
-                            <h3 class="card-title">gulp</h3>
-                            <p class="card-text">タスクランナーにgulpを採用し、ソースのコンパイルから自動プレビューまで一括で管理します。</p>
-                        </div>
-                        <div class="card-footer px-2 py-3 text-center bg-white border-0">
-                            <a href="<%= relPath %>about.html#features_gulp" class="btn btn-light"><i class="fas fa-fw fa-chevron-right" aria-hidden="true"></i>さらに詳しく</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 mb-3">
-                    <div class="card h-100 border-0">
-                        <div class="card-header px-2 py-3 text-center bg-white border-0">
-                            <i class="fas fa-fw fa-5x fa-mobile-alt" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-2 py-3 text-center">
-                            <h3 class="card-title">Honoka</h3>
-                            <p class="card-text">Bootstrapテーマの「Honoka」をベースとすることで、導入コストを削減。レスポンシブWebデザインを簡単に実現できます。</p>
-                        </div>
-                        <div class="card-footer px-2 py-3 text-center bg-white border-0">
-                            <a href="<%= relPath %>about.html#features_honoka" class="btn btn-light"><i class="fas fa-fw fa-chevron-right" aria-hidden="true"></i>さらに詳しく</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 mb-3">
-                    <div class="card h-100 border-0">
-                        <div class="card-header px-2 py-3 text-center bg-white border-0">
-                            <i class="fas fa-fw fa-5x fa-list" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-2 py-3 text-center">
-                            <h3 class="card-title">News</h3>
-                            <p class="card-text">新着情報をテンプレートで一括管理。Markdownコンテンツから、一覧ページ・各記事ページを自動生成します。</p>
-                        </div>
-                        <div class="card-footer px-2 py-3 text-center bg-white border-0">
-                            <a href="<%= relPath %>about.html#features_news" class="btn btn-light"><i class="fas fa-fw fa-chevron-right" aria-hidden="true"></i>さらに詳しく</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 text-center">
-                    <a href="<%= relPath %>about.html" class="btn btn-light"><i class="fas fa-fw fa-chevron-right" aria-hidden="true"></i>その他の機能について</a>
-                </div>
+            <p class="lead mb-3 text-center"><%= config.commons.iet %>は企業に「技術的負債」を強いる</p>
+            <div class="legacyOrModern_contents">
+                <p>今や多くの人が持っているスマートフォン。操作している手元をよく見ると、ほとんどの人は画面を縦向きにして使用していることでしょう。</p>
+                <p>一方、パソコンの画面は横長です。</p>
+                <p>現在のホームページは、パソコンの横長の画面でも、スマートフォンの縦長の画面でも、それぞれの画面に適したデザインで表示するように作られています。</p>
+                <p class="mb-1">ただし、何もせずしてそうなっているわけではなく、世のWebデザイナーやプログラマーが工夫することで、そのようなデザインを提供することが初めて可能となります。</p>
+                <p>スマートフォンが普及し始めた頃は、横長と縦長の両方に適したデザインを提供することは難しい課題でした。</p>
+                <p>スマートフォンが登場して約10年が経過した今、Webの規格は新しく制定され、新しい端末へ適用できるように拡張が続けられました。</p>
+                <p>しかし、Webのこうした新しい規格に完全には対応できていないソフトウェアがあります。</p>
+                <p>――そう、<%= config.commons.iet %>です。</p>
+                <p>新しく、便利で簡単に利用できる技術であればあるほど、<%= config.commons.iet %>は足かせになるのが現状です。</p>
+                <p>極端に言えば、</p>
+                <p class="my-2">「スマートフォンを取るか、<%= config.commons.iet %>を取るか。」</p>
+                <p>それほどまでに、<%= config.commons.iet %>は技術的負債となり得ます。</p>
             </div>
         </section>
-        <section class="container my-5 how2use fixed_anchor" id="how2use">
-            <div class="page-header mb-3 text-center how2use_header">
-                <h2>使い方<small class="ml-3">How to use?</small></h2>
+        <section class="container my-5 liabilities" id="liabilities">
+            <div class="page-header text-center liabilities_header">
+                <h2 class="mb-1"><%= config.commons.iet %>の「技術的負債」</h2>
             </div>
-            <div class="how2use_contents">
-                <ol class="pb-3">
-                    <li><code>git clone https://github.com/arm-band/kiribi_ususama.git</code>、または<a href="https://github.com/arm-band/kiribi_ususama/releases" target="_blank"><i class="fas fa-fw fa-external-link-alt" aria-hidden="true"></i>Kiribi UsusamaのGithubリポジトリ</a>からダウンロード</li>
-                    <li><code>npm i -D</code><small class="ml-3">(または<code>npm install --save-dev</code>)</small></li>
-                    <li><code>npm start</code><small class="ml-3">(<code>npm i -D</code>したファイルの再配置<span class="mx-2">+</span>初期設定画面生成・表示<span class="mx-2">+</span>初期設定完了後、<code>gulp init</code>実行)</small>
-                        <ul>
-                            <li><small>このコマンドで生成したディレクトリや<code>package-lock.json</code>等は<code>npm run fujoketsu</code>(不浄潔)で削除できます</small></li>
-                        </ul>
-                    </li>
-                    <li>2回目以降は<code>npm test</code>でブラウザ起動<span class="mx-2">+</span>自動リロード</li>
-                </ol>
-            </div>
-            <div class="text-center">
-                <p>ファイルの説明や詳しい使い方は<a href="https://docshed.ewigleere.net/ususama_book/" target="_blank"><i class="fas fa-fw fa-external-link-alt" aria-hidden="true"></i>マニュアル(GitBook)</a>を参照。</p>
-            </div>
-        </section>
-        <section class="container-fluid my-5 origin fixed_anchor" id="origin">
-            <div class="container-fluid origin_container">
-                <div class="container pb-5 fixed_anchor">
-                    <div class="page-header mb-3 text-center origin_header">
-                        <h2>名前の由来<small class="ml-3">Origin of name</small></h2>
+            <p class="lead mb-3 text-center">ガタガタに崩れていくホームページ</p>
+            <div class="liabilities_contents">
+                <p>ここまで<%= config.commons.iet %>を取り巻く現状について述べてきました。</p>
+                <p class="mb-3">具体的にどういった点が「技術的負債」になるのか、本ホームページを例に、Google Chromeと<%= config.commons.iet %>のそれぞれの表示について見てみましょう。</p>
+                <!-- 1. アイキャッチ -->
+                <h3 class="mt-3 mb-1">1. アイキャッチ</h3>
+                <p>本ホームページの最初に表示されるアイキャッチは、本来ならば<%- config.commons.ielm %>に<i class="fas fa-fw fa-ban magni1_5" aria-hidden="true"></i>が重なったロゴが画面の中央に表示されるようになっています。</p>
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <figure class="m-1 text-center">
+                            <a href="<%= relPath %>img/toppage_chrome.jpg"><img src="<%= relPath %>img/toppage_chrome.jpg" alt="Google Chromeの表示" class="img-fluid border"></a>
+                            <figcaption>Google Chromeの表示</figcaption>
+                        </figure>
                     </div>
-                    <div class="pb-3 origin_contents">
-                        <p>Bootstrapを使っていることから。Bootstrapが電源投入、自動実行といった意味合いなので、何か物事を始めるイメージと火で火打石を連想。ただし、「Hiuchiishi」だと長いので別の単語にしたかった、かつ、これから事を始めるに当たって最初に魔除けを行う、という意味も込めて「切り火」から「Kiribi」としました。</p>
-                        <p>一方、gulpは飲み込む、ごくごくと飲むという意味なので、上記の火のイメージを踏襲しつつ、何かを飲み込む逸話を持つ神仏ということで、一切不浄を飲み込み浄化する「烏枢沙摩明王」からお名前をお借りし、「Kiribi Ususama」としました。</p>
+                    <div class="col-12 col-lg-6">
+                        <figure class="m-1 text-center">
+                            <a href="<%= relPath %>img/toppage_ie.jpg"><img src="<%= relPath %>img/toppage_ie.jpg" alt="<%= config.commons.iet %>の表示" class="img-fluid border"></a>
+                            <figcaption><%= config.commons.iet %>の表示</figcaption>
+                        </figure>
                     </div>
                 </div>
+                <p class="mt-1">しかし、<%= config.commons.iet %>では右端に寄ってしまっています。</p>
+                <!-- 2. 記事のアイキャッチ画像 -->
+                <h3 class="mt-3 mb-1">2. 記事のアイキャッチ画像</h3>
+                <p>実例記事一覧のアイキャッチ画像は、画像の横幅と高さが丁度良いサイズで表示されるようになっています。</p>
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <figure class="m-1 text-center">
+                            <a href="<%= relPath %>img/bgimage_chrome.jpg"><img src="<%= relPath %>img/bgimage_chrome.jpg" alt="Google Chromeの表示" class="img-fluid border"></a>
+                            <figcaption>Google Chromeの表示</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <figure class="m-1 text-center">
+                            <a href="<%= relPath %>img/bgimage_ie.jpg"><img src="<%= relPath %>img/bgimage_ie.jpg" alt="<%= config.commons.iet %>の表示" class="img-fluid border"></a>
+                            <figcaption><%= config.commons.iet %>の表示</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <p class="mt-1">しかし、<%= config.commons.iet %>では縦に引き伸ばされてしまいます。</p>
+                <!-- 3. グリッドレイアウト -->
+                <h3 class="mt-3 mb-1">3. グリッドレイアウト</h3>
+                <p>Google ChromeとFirefoxのダウンロードページへのご案内は、</p>
+                <ul>
+                    <li>Google ChromeとFirefoxは2:1の比率で表示</li>
+                    <li>Google Chromeが先(パソコンでは左)</li>
+                </ul>
+                <p>となるようにデザインしています。</p>
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <figure class="m-1 text-center">
+                            <a href="<%= relPath %>img/grid_chrome.jpg"><img src="<%= relPath %>img/grid_chrome.jpg" alt="Google Chromeの表示" class="img-fluid border"></a>
+                            <figcaption>Google Chromeの表示</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <figure class="m-1 text-center">
+                            <a href="<%= relPath %>img/grid_ie.jpg"><img src="<%= relPath %>img/grid_ie.jpg" alt="<%= config.commons.iet %>の表示" class="img-fluid border"></a>
+                            <figcaption><%= config.commons.iet %>の表示</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <p class="mt-1">しかし、<%= config.commons.iet %>は</p>
+                <ul>
+                    <li>それぞれの比率はおろか、横向きではなく縦向きに表示される</li>
+                    <li>Firefoxが先に表示</li>
+                </ul>
+                <p>と、根本的にデザインが崩れてしまっています。</p>
+                <!-- 4. ページトップへ戻るボタン -->
+                <h3 class="mt-3 mb-1">4. ページトップへ戻るボタン</h3>
+                <p>本ホームページでは、ある程度スクロールすると右下にページトップへ戻るボタンが出現します。</p>
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <figure class="m-1 text-center">
+                            <a href="<%= relPath %>img/r2pt_chrome.jpg"><img src="<%= relPath %>img/r2pt_chrome.jpg" alt="Google Chromeの表示" class="img-fluid border"></a>
+                            <figcaption>Google Chromeの表示</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <figure class="m-1 text-center">
+                            <a href="<%= relPath %>img/r2pt_ie.jpg"><img src="<%= relPath %>img/r2pt_ie.jpg" alt="<%= config.commons.iet %>の表示" class="img-fluid border"></a>
+                            <figcaption><%= config.commons.iet %>の表示</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <p class="mt-1"><%= config.commons.iet %>では、このボタンが一部スクロールバーの裏側に隠れてしまいます。</p>
+                <p>そのため、他のブラウザよりも面積が狭く、やや押しづらくなっています。</p>
+                <hr>
+                <p>本ホームページだけでも、少なからず影響が出ていることが分かるかと思います。</p>
+                <p class="mt-1">そして、こうした<%= config.commons.iet %><strong>だけ</strong>に生じる問題に対して、今日もどこかで世の中のWebデザイナーやプログラマーが心を砕いています。</p>
+                <p>シェア率が1割にも満たないブラウザに対して(しかもスマートフォンに限れば全く影響がない)、莫大な労力がかけられているのがホームページの現状なのです。</p>
+                <p>――もし。</p>
+                <p>もし、</p>
+                <p>「<strong><%= config.commons.iet %>はマイナーだから気にしない</strong>」</p>
+                <p>と仰って頂けるならば。</p>
+                <p>その分の労力(人件費と技術料、そして時間)が少なくて済みます<small>(※最初から制作費用に含めておらず、オプションという場合もございます。その辺りはケースバイケースです)</small>。</p>
+                <p class="mt-1">どうか、世のWebデザイナーやプログラマーを、<%= config.commons.iet %>から解放して頂けないでしょうか？</p>
+                <p>ご検討のほど、よろしくお願いいたします。</p>
             </div>
         </section>
 <%
 if(gulpConfig.news) {
     const counter = indexCounter();
 %>
-        <section class="container my-5 releasenotes fixed_anchor" id="releasenotes">
-            <div class="page-header mb-3 text-center releasenotes_header">
-                <h2>更新履歴<small class="ml-3">Release Notes</small></h2>
-            </div>
-            <div class="releasenotes_contents">
-                <p class="text-center">更新履歴一覧(<%= counter %>件)です。</p>
-                <div class="row align-items-top my-4">
-<%- include("partial/_newscards.ejs", { relPath, newsBlock }) %>
+        <section class="container-fluid py-5 articles">
+            <div class="container">
+                <div class="page-header mb-3 text-center articles_header">
+                    <h2>実例記事一覧<small class="ml-3">Articles</small></h2>
                 </div>
-            </div>
-            <div class="text-center">
-                <a href="<%= relPath %>news/news1.html" class="btn btn-light"><i class="fas fa-fw fa-chevron-right" aria-hidden="true"></i>過去の更新履歴</a>
+                <div class="articles_contents">
+                    <p class="text-center"><%= config.commons.iet %>に関するトラブルや情報の実例記事の一覧(<%= counter %>件)です。</p>
+                    <div class="row align-items-top my-4">
+<%- include("partial/_newscards.ejs", { relPath, newsBlock }) %>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="<%= relPath %>news/news1.html" class="btn btn-light rounded-0"><i class="fas fa-fw fa-chevron-right" aria-hidden="true"></i>過去の実例記事</a>
+                </div>
             </div>
         </section>
 <% } %>
+        <section class="container-fluid py-5 download">
+            <div class="container">
+                <div class="page-header text-center download_header">
+                    <h2 class="mb-1">ダウンロードのご案内</h2>
+                </div>
+                <div class="download_contents">
+                    <p class="text-center"><i class="fas fa-fw fa-exclamation-triangle" aria-hidden="true"></i>本ホームページでは以下のブラウザをダウンロードすることを強くお勧めいたします<i class="fas fa-fw fa-exclamation-triangle" aria-hidden="true"></i></p>
+                    <div class="grid_container2 mt-3">
+                        <div class="grid_column">
+                            <div class="card img-thumbnail text-center h-100 rounded-0">
+                                <i class="fab fa-fw fa-10x fa-firefox mx-auto" aria-hidden="true"></i>
+                                <div class="card-body px-2 pt-0 pb-3">
+                                    <h3 class="card-title mt-0 mb-1">Firefox</h3>
+                                    <p class="card-text">Mozilla製の無料ブラウザ</p>
+                                    <div class="mt-3 mb-1"><a href="#" class="btn btn-primary py-2 px-3 rounded-0"><i class="fas fa-fw fa-download" aria-hidden="true"></i>ダウンロードページへ</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid_column">
+                            <div class="card img-thumbnail text-center h-100 rounded-0">
+                                <i class="fab fa-fw fa-10x fa-chrome mx-auto" aria-hidden="true"></i>
+                                <div class="card-body px-2 pt-0 pb-3">
+                                    <h3 class="card-title mt-0 mb-1">Google Chrome</h3>
+                                    <p class="card-text">Google製の無料ブラウザ</p>
+                                    <div class="mt-3 mb-1"><a href="#" class="btn btn-primary py-2 px-3 rounded-0"><i class="fas fa-fw fa-download" aria-hidden="true"></i>ダウンロードページへ</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container my-5 references">
+            <div class="page-header mb-3 text-center references_header">
+                <h2>参考サイト<small class="ml-3">References</small></h2>
+            </div>
+            <div class="references_contents">
+                <p class="text-center mb-3">参考サイト様の一覧です(順不同、敬称略)。</p>
+                <h3 class="mt-2 mb-1">Microsoft、企業に<%= config.commons.iet %>の使用をやめるよう要請</h3>
+                <ul>
+                    <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/The-perils-of-using-Internet-Explorer-as-your-default-browser/ba-p/331732">The perils of using <%= config.commons.iet %> as your default browser - Microsoft Tech Community - 331732</a></li>
+                    <li><a href="https://japanese.engadget.com/2019/02/08/internet-explorer-ie/">マイクロソフト、企業に<%= config.commons.iet %>の使用をやめるよう要請。「IEは技術的負債もたらす」 - Engadget 日本版</a></li>
+                </ul>
+                <h3 class="mt-2 mb-1"><%= config.commons.iet %>の今後について</h3>
+                <ul>
+                    <li><a href="https://blogs.technet.microsoft.com/jpieblog/2018/07/18/internet-explorer-support/"><%= config.commons.iet %> の今後について – Japan IE Support Team Blog</a></li>
+                    <li><a href="http://www.itmedia.co.jp/pcuser/articles/1807/18/news109.html">「<%= config.commons.iet %>の今後について」日本MS、ブログ公開　「世のコンテンツ、すでにIE非対応の最新技術で実現」 - ITmedia PC USER</a></li>
+                    <li><a href="https://blogs.windows.com/japan/2015/08/24/evaeyeedge/">Windows 10 に搭載される 2 つの Webブラウザ、Microsoft EdgeとInternet Explorer 11 - Windows Blog for Japan</a></li>
+                </ul>
+                <h3 class="mt-2 mb-1"><%= config.commons.iet %>の対応していない技術の一例</h3>
+                <ul>
+                    <li><a href="https://caniuse.com/#feat=css-grid">Can I use... Support tables for HTML5, CSS3, etc</a></li>
+                    <li><a href="https://caniuse.com/#feat=flexbox">Can I use... Support tables for HTML5, CSS3, etc</a></li>
+                </ul>
+                <h3 class="mt-2 mb-1">ブラウザのシェア率</h3>
+                <ul>
+                    <li><a href="http://gs.statcounter.com/">StatCounter Global Stats - Browser, OS, Search Engine including Mobile Usage Share</a></li>
+                    <li><a href="http://gs.statcounter.com/browser-market-share/all/japan">Browser Market Share Japan | StatCounter Global Stats</a></li>
+                    <li><a href="https://www.w3schools.com/browsers/">Browser Statistics</a></li>
+                </ul>
+            </div>
+        </section>
     </main>
     <!-- /main -->
 </div>

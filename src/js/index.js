@@ -3,7 +3,7 @@ ieBuster({
     mainText: "Internet Explorerではホームページの動作が保証できません。最新の Google Chrome をご利用ください。",
     linkText: "ダウンロードページへ",
     linkUrl: "https://www.google.com/chrome/"
-})
+});
 
 $(function() {
     //iPhone・iPad背景画像バグ対処
@@ -78,8 +78,8 @@ function pageScroll(screlm) {
                 targetID = href;
             }
             var target = $(targetID);
-//            var position = target.offset().top - navbarHeight;
-            var position = target.offset().top;
+            var position = target.offset().top - navbarHeight;
+//            var position = target.offset().top;
             $(screlm).animate({ scrollTop:position }, speed, "easeInOutCirc");
             $navbar.find(".navbar-toggle[data-target=\"#navbarList\"]").click(); //移動したらハンバーガーを折りたたむ
             return false;
@@ -90,8 +90,8 @@ function pageScroll(screlm) {
         var href = $(this).attr("href");
         var targetID = href == "#" || href == "" ? "html" : href; //リンク先が#か空だったらhtmlに
         var target = $(targetID);
-//        var position = target.offset().top - navbarHeight;
-        var position = target.offset().top;
+        var position = target.offset().top - navbarHeight;
+//        var position = target.offset().top;
         $(screlm).animate({ scrollTop:position }, speed, "easeInOutCirc");
         return false;
     });

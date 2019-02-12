@@ -5,7 +5,7 @@
 %>
                 <div class="col-md-12 col-lg-6 col-xl-4 news_card mb-4">
                     <article class="news_article" id="<%= newsBlock[i].url %>">
-                        <div class="card h-100">
+                        <div class="card h-100 rounded-0">
 <% if(newsBlock[i].thumbnail !== null && newsBlock[i].thumbnail !== undefined) { %>
                             <img class="card-img-top img-fluid" src="<%= relPath %><%- config.commons.newsthumbnail %><%- newsBlock[i].thumbnail %>" alt="<%= newsBlock[i].title %>">
 <% } %>

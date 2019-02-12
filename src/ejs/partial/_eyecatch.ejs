@@ -1,4 +1,13 @@
-    <section class="eyecatch">
+<%
+let eyecatchStyle = ``
+if(id === "article") {
+    if(attributes.thumbnail !== null && attributes.thumbnail !== undefined) {
+        eyecatchStyle = ` style="background-image:url('${relPath}${config.commons.newsthumbnail}${attributes.thumbnail}');"`
+    }
+}
+%>
+
+    <section class="eyecatch"<%- eyecatchStyle %>>
         <div class="container-fluid">
 <% if(id === "index") { %>
             <h1 class="eyecatch_header">
@@ -7,6 +16,8 @@
                     <i class="fas fa-fw fa-ban fa-stack-2x"></i>
                 </span>
             </h1>
+<% } else if(id === "article") { %>
+            <h1 class="eyecatch_header smallText"><%= attributes.title %></h1>
 <% } else { %>
             <h1 class="eyecatch_header"><%= headerString %></h1>
 <% } %>

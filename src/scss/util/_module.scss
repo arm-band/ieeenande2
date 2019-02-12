@@ -44,11 +44,11 @@
     color: tomato;
     z-index: 3;
     font: {
-        size: calc(10rem + 4vw);
-        family: "Dancing Script", cursive, "Sawarabi Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "HGP明朝B", Georgia, メイリオ, Meiryo, serif; /* googleフォント */
+        size: $fontSize;
+        family: "Noto Sans JP", Georgia, メイリオ, Meiryo, sans-serif;
     }
     .fab.fa-internet-explorer {
-        font-size: calc(10rem + 4vw);
+        font-size: $fontSize;
     }
 }
 //別ページからアンカー位置へ移動する際にずれるのを防止
