@@ -1,0 +1,108 @@
+<%
+parameters = {
+    title: "開発者の方へ",
+    entitle: "Developer's Page",
+    css: "contents",
+    js: "app.min",
+    description: "開発者の方向けのいくつかの情報を掲載しておきます。",
+    ogpimage: "eyecatch.jpg"
+}
+const siteHashTag = config.commons.sitename.replace(/\s/gi, "");
+%><%- include("util/_init_load") %><%- include("util/_headset", { config, parameters }) %>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<%- config.commons.slayer %>
+<%- include("partial/_head", { config, parameters, commonVar, metaTitle, metaDescription, metaOgpimage }) %>
+</head>
+<body data-offset="<%= navbarHeight %>" class="<%= id %>" id="<%= id %>">
+<div id="wrapper">
+<div class="upper">
+<%- include("partial/_header", { config, commonVar }) %>
+<%- include("partial/_eyecatch", { headerString }) %>
+    <!-- main -->
+    <main class="main <%= id %>main">
+        <aside class="container">
+<%- include("partial/_breadcrumb", { parameters, relPath }) %>
+        </aside>
+        <section class="container my-5 microsoft">
+            <div class="page-header text-center microsoft_header">
+                <h2 class="mb-1"><%= headerString %></h2>
+            </div>
+            <p class="text-center mb-3">参考サイトや情報の一覧です(順不同、敬称略)。</p>
+        </section>
+        <section class="container my-5 microsoft">
+            <div class="page-header text-center microsoft_header">
+                <h2 class="mb-1">Microsoftからの発表・情報</h2>
+            </div>
+            <div class="microsoft_contents">
+                <ul class="fa-ul">
+                    <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/The-perils-of-using-Internet-Explorer-as-your-default-browser/ba-p/331732" target="_blank"><i class="fas fa-li fa-external-link-alt" aria-hidden="true"></i>The perils of using <%= config.commons.iet %> as your default browser - Microsoft Tech Community - 331732</a></li>
+                    <li><a href="https://blogs.technet.microsoft.com/jpieblog/2018/07/18/internet-explorer-support/" target="_blank"><i class="fas fa-li fa-external-link-alt" aria-hidden="true"></i><%= config.commons.iet %> の今後について – Japan IE Support Team Blog</a></li>
+                    <li><a href="https://blogs.windows.com/japan/2015/08/24/evaeyeedge/" target="_blank"><i class="fas fa-li fa-external-link-alt" aria-hidden="true"></i>Windows 10 に搭載される 2 つの Webブラウザ、Microsoft EdgeとInternet Explorer 11 - Windows Blog for Japan</a></li>
+                </ul>
+                <p>ニュース記事は以下。</p>
+                <ul class="fa-ul">
+                    <li><a href="https://japanese.engadget.com/2019/02/08/internet-explorer-ie/" target="_blank"><i class="fas fa-li fa-external-link-alt" aria-hidden="true"></i>マイクロソフト、企業に<%= config.commons.iet %>の使用をやめるよう要請。「IEは技術的負債もたらす」 - Engadget 日本版</a></li>
+                    <li><a href="http://www.itmedia.co.jp/pcuser/articles/1807/18/news109.html" target="_blank"><i class="fas fa-li fa-external-link-alt" aria-hidden="true"></i>「<%= config.commons.iet %>の今後について」日本MS、ブログ公開　「世のコンテンツ、すでにIE非対応の最新技術で実現」 - ITmedia PC USER</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="container my-5 iebuster">
+            <div class="page-header text-center iebuster_header">
+                <h2 class="mb-1">IE Buster</h2>
+            </div>
+            <div class="iebuster_contents">
+                <ul class="fa-ul">
+                    <li><a href="https://ie-buster.qranoko.jp/" target="_blank"><i class="fas fa-li fa-external-link-alt" aria-hidden="true"></i>IE Buster - IEの亡霊からWeb制作者を守る「IEバスター」</a></li>
+                </ul>
+                <p>Internet ExplorerでWebサイトを閲覧した際に他ブラウザのダウンロードを勧めるポップアップを表示させることができるJSプラグイン。</p>
+                <p>本Webサイトでも使用しております。</p>
+            </div>
+        </section>
+        <section class="container my-5 caniuse">
+            <div class="page-header text-center icaniuse_header">
+                <h2 class="mb-1">Can I use...</h2>
+            </div>
+            <div class="caniuse_contents">
+                <ul class="fa-ul">
+                    <li><a href="https://caniuse.com/" target="_blank"><i class="fas fa-li fa-external-link-alt" aria-hidden="true"></i>Can I use... Support tables for HTML5, CSS3, etc</a></li>
+                </ul>
+                <p>各ブラウザの技術的な対応状況の早見表。</p>
+            </div>
+        </section>
+        <section class="container my-5 statistics">
+            <div class="page-header text-center statistics_header">
+                <h2 class="mb-1">ブラウザシェア率</h2>
+            </div>
+            <div class="statistics_contents">
+                <ul class="fa-ul">
+                    <li><a href="http://gs.statcounter.com/" target="_blank"><i class="fas fa-li fa-external-link-alt" aria-hidden="true"></i>StatCounter Global Stats - Browser, OS, Search Engine including Mobile Usage Share</a></li>
+                    <li><a href="http://gs.statcounter.com/browser-market-share/all/japan" target="_blank"><i class="fas fa-li fa-external-link-alt" aria-hidden="true"></i>Browser Market Share Japan | StatCounter Global Stats</a></li>
+                    <li><a href="https://www.w3schools.com/browsers/" target="_blank"><i class="fas fa-li fa-external-link-alt" aria-hidden="true"></i>Browser Statistics</a></li>
+                </ul>
+                <p>各ブラウザのシェア率。</p>
+            </div>
+        </section>
+        <section class="container my-5 statistics">
+            <div class="page-header text-center statistics_header">
+                <h2 class="mb-1">ハッシュタグ</h2>
+            </div>
+            <div class="statistics_contents">
+                <p><strong><a href="https://twitter.com/hashtag/<%= siteHashTag %>?src=hash" target="_blank">#<%= siteHashTag %></a></strong>でお願いします。</p>
+                <p>また、<a href="https://twitter.com/hashtag/IE%E6%92%B2%E6%BB%85%E6%B4%BB%E5%8B%95?src=hash" target="_blank">#IE撲滅活動</a>、<a href="https://twitter.com/hashtag/IE%E6%92%B2%E6%BB%85%E5%A7%94%E5%93%A1%E4%BC%9A?src=hash" target="_blank">#IE撲滅委員会</a>もどうぞよろしくお願いいたします。</p>
+            </div>
+        </section>
+        <section class="container my-5">
+            <div class="text-center my-4">
+                <a href="<%= relPath %>" class="btn btn-light"><i class="fas fa-fw fa-chevron-left" aria-hidden="true"></i>トップページへ戻る</a>
+            </div>
+        </section>
+    </main>
+    <!-- /main -->
+</div>
+<%- include("partial/_footer", { config, copyRightYear }) %>
+</div>
+<%- include("partial/_js_loader", { parameters, relPath }) %>
+</body>
+</html>

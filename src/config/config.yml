@@ -3,7 +3,7 @@ commons:
   description: Microsoftから使用を止めるように要請が出された今こそーー今度こそ、完全なる眠りを、彼のIEへ。
   year: 2019
   author: アルム＝バンド
-  url: https://ieeenande.ewigleere.net
+  url: https://ieeenande.ewigleere.net/
   ogpimage: img/eyecatch.jpg
   twitteraccount: Bredtn_1et
   newsthumbnail: img/thumbnails/
@@ -27,13 +27,14 @@ commons:
   penthesilea: |-
     <!--
     アア……ゥアア……●す、●す……●すッ！！
-    『我が瞋恚にて果てよIE(Outrage Engineer)』！！！
+    『我が瞋恚にて果てよIE』！！！
     -->
   salieri: |-
     <!--
     我は死だ、我は窓に愛されしものを●すのだ！
-    『至高の窓よ、我を憐れみたまえ(Windows Santissimo Misericordia di Ingegnere)』
+    『至高の窓よ、我を憐れみたまえ』
     -->
+  four: <!-- IEシスベシフォーーーウ！ -->
 param:
   indexcount: 6
   newscount: 6

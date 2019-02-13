@@ -1,10 +1,3 @@
-/* IE鎮まり給へ */
-ieBuster({
-    mainText: "Internet Explorerではホームページの動作が保証できません。最新の Google Chrome をご利用ください。",
-    linkText: "ダウンロードページへ",
-    linkUrl: "https://www.google.com/chrome/"
-});
-
 $(function() {
     //iPhone・iPad背景画像バグ対処
     mobileSafariRequiem();
@@ -16,6 +9,13 @@ $(function() {
 
     //ページ内スクロール
     pageScroll(screlm);
+
+    /* IE鎮まり給へ */
+    ieBuster({
+        mainText: "Internet Explorerではホームページの動作が保証できません。最新の Google Chrome をご利用ください。",
+        linkText: "ダウンロードページへ",
+        linkUrl: "https://www.google.com/chrome/"
+    });
 });
 
 //mobile Saffari対策

@@ -26,6 +26,9 @@
     &.magni1_5 {
         font-size: 1.5rem;
     }
+    &.fa-ban {
+        color: tomato;
+    }
 }
 .fab {
     &.fa {
@@ -53,6 +56,10 @@
 .fa-li {
     vertical-align: middle;
 }
+span.underline {
+    background: linear-gradient(transparent 50%, $bg-color3 50%);
+}
+/* R.I.P. IE */
 #ie-buster-app {
     letter-spacing: 0;
 }
