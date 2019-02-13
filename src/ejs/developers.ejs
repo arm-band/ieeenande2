@@ -12,7 +12,6 @@ const siteHashTag = config.commons.sitename.replace(/\s/gi, "");
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<%- config.commons.slayer %>
 <%- include("partial/_head", { config, parameters, commonVar, metaTitle, metaDescription, metaOgpimage }) %>
 </head>
 <body data-offset="<%= navbarHeight %>" class="<%= id %>" id="<%= id %>">
@@ -90,7 +89,6 @@ const siteHashTag = config.commons.sitename.replace(/\s/gi, "");
             </div>
             <div class="statistics_contents">
                 <p><strong><a href="https://twitter.com/hashtag/<%= siteHashTag %>?src=hash" target="_blank">#<%= siteHashTag %></a></strong>でお願いします。</p>
-                <p>また、<a href="https://twitter.com/hashtag/IE%E6%92%B2%E6%BB%85%E6%B4%BB%E5%8B%95?src=hash" target="_blank">#IE撲滅活動</a>、<a href="https://twitter.com/hashtag/IE%E6%92%B2%E6%BB%85%E5%A7%94%E5%93%A1%E4%BC%9A?src=hash" target="_blank">#IE撲滅委員会</a>もどうぞよろしくお願いいたします。</p>
             </div>
         </section>
         <section class="container my-5">

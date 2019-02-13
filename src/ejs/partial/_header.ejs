@@ -9,16 +9,13 @@
             <div class="collapse navbar-collapse" id="navbarList">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="<%= relPath %>#aboutIe"><%= config.commons.iet %>とは</a>
+                        <a class="linkTwitter nav-link" href="http://twitter.com/share?url=<%= config.commons.url %>&text=<%= config.commons.sitename %>%20%2d%20<%= metaDescription %>" target="_blank" title="Twitterでツイート"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i>ツイート</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<%= relPath %>#articles">実例記事一覧</a>
+                        <a class="linkFacebook nav-link" href="https://www.facebook.com/sharer/sharer.php?u=<%= config.commons.url %>" target="_blank" title="Facebookに投稿"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i>投稿</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<%= relPath %>#download">ダウンロードのご案内</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<%= relPath %>#developers">開発者の方へ</a>
+                        <a class="linkLine nav-link" href="http://line.me/R/msg/text/?<%= config.commons.sitename %>%20%2d%20<%= metaDescription %>%20<%= config.commons.url %>" target="_blank" title="LINEトークに送る"><i class="fab fa-fw fa-line" aria-hidden="true"></i>送る</a>
                     </li>
                 </ul>
             </div>

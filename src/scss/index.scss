@@ -27,6 +27,12 @@
 //                                                *
 // ============================================= */
 .index .indexmain {
+    figcaption {
+        &:after {
+            content: "(クリックで画像を拡大)";
+            font-style: oblique;
+        }
+    }
     .topics, .aboutIe, .ieProbrem, .legacyOrModern, .liabilities {
         .lead {
             &:before,&:after {

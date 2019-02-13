@@ -12,7 +12,6 @@ parameters = {
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<%- config.commons.salieri %>
 <%- include("partial/_head", { config, parameters, commonVar, metaTitle, metaDescription, metaOgpimage }) %>
 </head>
 <body data-offset="<%= navbarHeight %>" class="<%= id %>" id="<%= id %>">
@@ -51,6 +50,5 @@ const articleUrl = funcArticleUrl(config.commons.url, attributes);
 <%- include("partial/_footer", { config, copyRightYear }) %>
 </div>
 <%- include("partial/_js_loader", { parameters, relPath }) %>
-<%- config.commons.four %>
 </body>
 </html>

@@ -18,7 +18,6 @@ const indexCounter = () => {
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<%- config.commons.madoka %>
 <%- include("partial/_head", { config, parameters, commonVar, metaTitle, metaDescription, metaOgpimage }) %>
 </head>
 <body data-spy="scroll" data-target="#navbarMenu" data-offset="<%= navbarHeight %>" class="<%= id %>" id="<%= id %>">
@@ -81,7 +80,7 @@ const indexCounter = () => {
                 </div>
                 <p class="lead mb-3 text-center"><%= config.commons.iet %>は「ソフトウェア」、Yahoo!JAPANは「ホームページ」</p>
                 <div class="ieNotYahoo_contents mb-4">
-                    <p>はい、意識はしないかもしれませんが、実は別のものなのです。</p>
+                    <p>はい。意識はしないかもしれませんが、実は別のものです。</p>
                     <p>Yahoo!JAPANはインターネットから情報を検索する、というやや特殊な役割を持っていますが、ブログの記事やニュースメディアと同じようにあくまで「ソフトウェアで開くホームページの1つ」です。</p>
                     <p>逆に、こうしたホームページを開くために使うソフトウェアを「<strong>ブラウザ</strong>」といいます。<small>なお、ブラウザは「(本や雑誌を)ざっと読む、拾い読みする」という意味の英語に由来します。</small></p>
                     <p><span class="underline"><%= config.commons.iet %>はブラウザ(ソフトウェア)</span>の一種です。</p>
@@ -120,7 +119,7 @@ const indexCounter = () => {
                     <p>割合こそ下がるものの、Google Chromeは<strong>約43%</strong>。一方の<%= config.commons.iet %>は<strong>約9%</strong>と<strong>1割を切って</strong>います(2019年1月現在)。日本国内でも、Google Chromeと<%= config.commons.iet %>は実に4倍以上の差があります！</p>
                     <div><a href="<%= relPath %>img/statcounter_browser_japan.png" data-lightbox="statistics2"><img src="<%= relPath %>img/statcounter_browser_japan.png" alt="日本のブラウザシェア率(2018/1～2019/1)。2019/1現在、Google Chromeは約43%、<%= config.commons.iet %>は約9%となっています。" class="img-fluid"></a></div>
                     <p class="mt-2">このように、<span class="underline">世の中の大多数の人はGoogle Chromeを使ってホームページを見ている</span>のです。</p>
-                    <p>しかも、来年には<%= config.commons.iet %>のシェア率は<strong>さらに下がる</strong>ことが見込まれています<small>(※Windows7のサポート終了に伴い、<%= config.commons.iet %>を標準とするパソコンが減少するため)</small>。</p>
+                    <p>しかも、来年には<%= config.commons.iet %>のシェア(使用)率は<strong>さらに下がる</strong>ことが見込まれます<small>(※Windows7のサポート終了に伴い、<%= config.commons.iet %>を標準とするパソコンが減少するため)</small>。</p>
                 </div>
             </div>
         </section>
@@ -128,7 +127,7 @@ const indexCounter = () => {
             <div class="page-header text-center ieProbrem_header">
                 <h2 class="mb-1"><%- config.commons.iel %><%= config.commons.iet %>の問題</h2>
             </div>
-            <p class="lead mb-3 text-center">互換性のために残されているに過ぎない<%= config.commons.iet %></p>
+            <p class="lead mb-3 text-center">互換性のために残されている<%= config.commons.iet %></p>
             <div class="ieProbrem_contents">
                 <p>さて、<%= config.commons.iet %>の何が問題なのでしょうか？</p>
                 <p><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/The-perils-of-using-Internet-Explorer-as-your-default-browser/ba-p/331732" target="_blank"><i class="fas fa-fw fa-external-link-alt" aria-hidden="true"></i>最初に挙げた記事</a>では、<%= config.commons.iet %>は<q>古いWebアプリケーションを動作させる互換性のためのソリューション</q>と述べています。</p>
@@ -153,9 +152,6 @@ const indexCounter = () => {
                 <p>しかし、Webのこうした新しい規格に完全には対応できていないソフトウェアがあります。</p>
                 <p>――そう、<%= config.commons.iet %>です。</p>
                 <p>新しく、便利で簡単に利用できる技術であればあるほど、<%= config.commons.iet %>は足かせになるのが現状です。</p>
-                <p>極端に言えば、</p>
-                <p class="my-2">「スマートフォンを取るか、<%= config.commons.iet %>を取るか。」</p>
-                <p>それほどまでに、<%= config.commons.iet %>は技術的負債となり得ます。</p>
             </div>
         </section>
         <section class="container my-5 liabilities" id="liabilities">
@@ -251,14 +247,9 @@ const indexCounter = () => {
                 <p>そのため、他のブラウザよりも面積が狭く、やや押しづらくなっています。</p>
                 <hr>
                 <p>本ホームページだけでも、少なからず影響が出ていることが分かるかと思います。</p>
-                <h3 class="text-center mt-4 mb-1">まとめ</h3>
-                <p class="text-center"><%= config.commons.iet %>は</p>
-                <p class="text-center"><span class="underline">開発元のMicrosotから「使用を止めるように」要請が出ている</span></p>
-                <p class="text-center"><span class="underline">国内のシェア率は1割未満</span></p>
-                <p class="text-center"><span class="underline">ホームページに「技術的負債」を負わせる</span></p>
-                <p class="mt-3 text-center">これを機会に、<%= config.commons.iet %>から別のブラウザへの移行をお勧めいたします。</p>
-                <p class="text-center"><a href="#download">本ページ下部</a>にダウンロードリンクとマニュアルへのリンクを用意させて頂きました。</p>
-                <p class="text-center">ぜひ、ご活用ください。</p>
+                <p class="mt-3">こうした問題を避けるため、<%= config.commons.iet %>から別のブラウザへの移行をお勧めいたします。</p>
+                <p><a href="#download">本ページ下部</a>にダウンロードリンクとマニュアルへのリンクを用意させて頂きました。</p>
+                <p>ぜひ、ご活用ください。</p>
             </div>
         </section>
 <%- config.commons.junko %>
@@ -289,7 +280,7 @@ if(gulpConfig.news) {
                     <h2 class="mb-1">ダウンロードのご案内</h2>
                 </div>
                 <div class="download_contents">
-                    <p class="text-center"><i class="fas fa-fw fa-exclamation-triangle" aria-hidden="true"></i>本ホームページでは以下のブラウザをダウンロードすることを強くお勧めいたします<i class="fas fa-fw fa-exclamation-triangle" aria-hidden="true"></i></p>
+                    <p class="text-center">本ホームページでは以下のブラウザをダウンロードすることをお勧めいたします。</p>
                     <div class="grid_container2 mt-3">
                         <div class="grid_column">
                             <div class="card img-thumbnail text-center h-100 rounded-0">
