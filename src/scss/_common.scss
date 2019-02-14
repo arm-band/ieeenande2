@@ -59,6 +59,11 @@
 span.underline {
     background: linear-gradient(transparent 50%, $bg-color3 50%);
 }
+.summary_checkbox {
+    .fa-check {
+        color: $link-color;
+    }
+}
 /* R.I.P. IE */
 #ie-buster-app {
     letter-spacing: 0;

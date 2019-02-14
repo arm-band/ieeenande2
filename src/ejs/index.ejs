@@ -41,6 +41,7 @@ const indexCounter = () => {
         <section class="container-fluid my-5 index">
             <div class="container">
                 <h4 class="mt-1 mb-0 text-center">目次</h4>
+                <p class="text-center mt-2 mb-4">※お急ぎの方は<a href="#summary"><strong>まとめ</strong></a>をご覧ください。</p>
                 <div class="grid_container mt-3">
                     <div class="grid_column">
                         <h5><a href="#aboutIe"><%- config.commons.ielm %><%= config.commons.iet %>とは？</a></h5>
@@ -56,6 +57,7 @@ const indexCounter = () => {
                         <ul>
                             <li><a href="#ieProbrem"><%= config.commons.iet %>の問題</a></li>
                             <li><a href="#legacyOrModern"><%= config.commons.iet %>か？スマートフォンか？</a></li>
+                            <li><a href="#security">潜在的セキュリティリスク</a></li>
                             <li><a href="#liabilities"><%= config.commons.iet %>の「技術的負債」</a></li>
                         </ul>
                     </div>
@@ -94,8 +96,8 @@ const indexCounter = () => {
                     <p>代表的なものとしては、以下のブラウザが挙げられます。</p>
                     <ul class="fa-ul mb-3">
                         <li class="mb-1"><i class="fab fa-li fa-chrome magni1_5" aria-hidden="true"></i>Google Chrome(グーグル・クローム)</li>
-                        <li class="mb-1"><i class="fab fa-li fa-firefox magni1_5" aria-hidden="true"></i>Safari(サファリ)</li>
-                        <li class="mb-1"><i class="fab fa-li fa-safari magni1_5" aria-hidden="true"></i>Firefox(ファイアフォックス)</li>
+                        <li class="mb-1"><i class="fab fa-li fa-safari magni1_5" aria-hidden="true"></i>Safari(サファリ)</li>
+                        <li class="mb-1"><i class="fab fa-li fa-firefox magni1_5" aria-hidden="true"></i>Firefox(ファイアフォックス)</li>
                         <li class="mb-1"><i class="fab fa-li fa-edge magni1_5" aria-hidden="true"></i>Edge(エッジ)</li>
                     </ul>
                     <p>SafariはiPhoneに標準搭載されているブラウザです。Google ChromeもiPhoneではないスマートフォン(Android(アンドロイド))に標準搭載されています。</p>
@@ -154,6 +156,23 @@ const indexCounter = () => {
                 <p>新しく、便利で簡単に利用できる技術であればあるほど、<%= config.commons.iet %>は足かせになるのが現状です。</p>
             </div>
         </section>
+        <section class="container my-5 security" id="security">
+            <div class="page-header text-center security_header">
+                <h2 class="mb-1">潜在的セキュリティリスク</h2>
+            </div>
+            <p class="lead mb-3 text-center">通常使うブラウザだからこそ狙われる</p>
+            <div class="security_contents">
+                <p>冒頭で「Yahoo!JAPANを開くために意識せずに使われる」というお話をしました。</p>
+                <p>特殊な設定を行うこともなく、意識されずに使われるソフトウェアだからこそ、セキュリティでは真っ先に狙われる対象にもなります。</p>
+                <p><span class="underline"><strong>今月(2019年2月)</strong>も、<%= config.commons.iet %>の未知の脆弱性を狙った攻撃が発生</span>し、それに対するセキュリティパッチが配布されています。</p>
+                <h5 class="mt-2 mb-1">参考記事</h5>
+                <ul class="mb-1">
+                    <li><a href="https://www.itmedia.co.jp/news/articles/1902/13/news069.html">Microsoftの月例更新プログラム公開　既に攻撃が発生しているIEの脆弱性も - ITmedia NEWS</a></li>
+                    <li><a href="https://cloud.watch.impress.co.jp/docs/news/1169399.html">Microsoftが2月の月例パッチ公開、悪用が確認されているIEの脆弱性などを修正 - クラウド Watch</a></li>
+                </ul>
+                <p class="mt-1">このように、「最初から用意されているソフトウェアは狙われやすい」という点も、一つのセキュリティリスクとして押さえておくと良いと思います。</p>
+            </div>
+        </section>
         <section class="container my-5 liabilities" id="liabilities">
             <div class="page-header text-center liabilities_header">
                 <h2 class="mb-1"><%= config.commons.iet %>の「技術的負債」</h2>
@@ -182,7 +201,7 @@ const indexCounter = () => {
                 <p class="mt-1">しかし、<%= config.commons.iet %>では右端に寄ってしまっています。</p>
                 <!-- 2. 記事のアイキャッチ画像 -->
                 <h3 class="mt-3 mb-1">2. 記事のアイキャッチ画像</h3>
-                <p>実例記事一覧のアイキャッチ画像は、画像の横幅と高さが丁度良いサイズで表示されるようになっています。</p>
+                <p>このページの下にある実例記事一覧のアイキャッチ画像は、画像の横幅と高さが丁度良いサイズで表示されるようになっています。</p>
                 <div class="row">
                     <div class="col-12 col-lg-6">
                         <figure class="m-1 text-center">
@@ -200,7 +219,7 @@ const indexCounter = () => {
                 <p class="mt-1">しかし、<%= config.commons.iet %>では縦に引き伸ばされてしまいます。</p>
                 <!-- 3. グリッドレイアウト -->
                 <h3 class="mt-3 mb-1">3. グリッドレイアウト</h3>
-                <p>Google ChromeとFirefoxのダウンロードページへのご案内は、</p>
+                <p>このページの下にあるGoogle ChromeとFirefoxのダウンロードページへのご案内は、</p>
                 <ul>
                     <li>Google ChromeとFirefoxは2:1の比率で表示</li>
                     <li>Google Chromeが先(パソコンでは左)</li>
@@ -225,7 +244,8 @@ const indexCounter = () => {
                     <li>それぞれの比率はおろか、横向きではなく縦向きに表示される</li>
                     <li>Firefoxが先に表示</li>
                 </ul>
-                <p>と、根本的にデザインが崩れてしまっています。</p>
+                <p>と、<strong>根本的にデザインが崩れて</strong>しまっています。</p>
+                <p>この問題は、<span class="underline">パソコンとスマートフォンの両方に合わせたデザインを行った場合に問題になりやすい</span>です。</p>
                 <!-- 4. ページトップへ戻るボタン -->
                 <h3 class="mt-3 mb-1">4. ページトップへ戻るボタン</h3>
                 <p>本ホームページでは、ある程度スクロールすると右下にページトップへ戻るボタンが出現します。</p>
@@ -246,7 +266,19 @@ const indexCounter = () => {
                 <p class="mt-1"><%= config.commons.iet %>では、このボタンが一部スクロールバーの裏側に隠れてしまいます。</p>
                 <p>そのため、他のブラウザよりも面積が狭く、やや押しづらくなっています。</p>
                 <hr>
-                <p>本ホームページだけでも、少なからず影響が出ていることが分かるかと思います。</p>
+                <p>このように、<span class="underline">本ホームページだけでも影響が出てしまって</span>います。</p>
+            </div>
+        </section>
+        <section class="container my-5 summary" id="summary">
+            <div class="page-header text-center summary_header">
+                <h2 class="mb-1">まとめ</h2>
+            </div>
+            <div class="summary_contents">
+                <p class="text-center"><%= config.commons.iet %>は</p>
+                <p class="text-center"><span class="fa-stack summary_checkbox mr-2"><i class="far fa-square fa-stack-1x magni1_5"></i><i class="fas fa-check fa-stack-1x ml-2 magni1_5"></i></span><span class="underline">開発元のMicrosotから「使用を止めるように」要請が出された</span></p>
+                <p class="text-center"><span class="fa-stack summary_checkbox mr-2"><i class="far fa-square fa-stack-1x magni1_5"></i><i class="fas fa-check fa-stack-1x ml-2 magni1_5"></i></span>2019年1月現在<span class="underline">国内のシェア(使用)率は1割を切った</span></p>
+                <p class="text-center"><span class="fa-stack summary_checkbox mr-2"><i class="far fa-square fa-stack-1x magni1_5"></i><i class="fas fa-check fa-stack-1x ml-2 magni1_5"></i></span>(通常使用されるソフトウェアのため)<span class="underline">セキュリティ的に狙われやすい</span></p>
+                <p class="text-center"><span class="fa-stack summary_checkbox mr-2"><i class="far fa-square fa-stack-1x magni1_5"></i><i class="fas fa-check fa-stack-1x ml-2 magni1_5"></i></span><span class="underline">ホームページに「技術的負債」を負わせる</span></p>
                 <p class="mt-3">こうした問題を避けるため、<%= config.commons.iet %>から別のブラウザへの移行をお勧めいたします。</p>
                 <p><a href="#download">本ページ下部</a>にダウンロードリンクとマニュアルへのリンクを用意させて頂きました。</p>
                 <p>ぜひ、ご活用ください。</p>
@@ -322,12 +354,12 @@ if(gulpConfig.news) {
         </section>
         <section class="container my-5 references" id="developers">
             <div class="page-header mb-3 text-center developers_header">
-                <h2>開発者の方へ</h2>
+                <h2>Web開発者の方へ</h2>
             </div>
             <div class="developers_contents">
-                <p class="text-center">開発者の方への参考リンクなどを集めました。</p>
+                <p class="text-center">Web開発者の方への参考リンクなどを集めました。</p>
                 <div class="text-center mt-3 mb-5">
-                    <a href="<%= relPath %>developers.html" class="btn btn-primary rounded-0"><i class="fas fa-fw fa-chevron-right" aria-hidden="true"></i>開発者の方へ</a>
+                    <a href="<%= relPath %>developers.html" class="btn btn-primary rounded-0"><i class="fas fa-fw fa-chevron-right" aria-hidden="true"></i>Web開発者の方へ</a>
                 </div>
             </div>
         </section>
